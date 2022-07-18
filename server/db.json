@@ -1,0 +1,74 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "email": "testADMIN@test.ru",
+      "password": "user",
+      "isAdmin": true,
+      "favorites": [
+        {
+          "$id": "629cec88c7debc6b6d74bf16"
+        },
+        {
+          "$id": "629cee31219975cfc6f90f4d"
+        }
+      ],
+      "createdAt": null,
+      "updatedAt": null
+    }
+  ],
+  "genres": [
+    {
+      "id": "1",
+      "name": "Adventure",
+      "slug": "adventure",
+      "description": "<p>A good adventure movie is the best way to escape from your usual life at least for a while and imagine yourself on board a spaceship or on a lonely raft in the endless ocean.</p>",
+      "icon": "MdHiking",
+      "createdAt": null,
+      "updatedAt": null
+    }
+  ],
+  "actors": [
+    {
+      "id": "1",
+      "name": "Tom Holland",
+      "photo": "uploads/actors/holland.jpg",
+      "slug": "tom holland",
+      "createdAt": null,
+      "updatedAt": null
+    }
+  ],
+  "movies": [
+    {
+      "id": "1",
+      "poster": "uploads/movies/ip-man-small.jpg",
+      "bigPoster": "uploads/movies/ip-man.jpg",
+      "title": "Ip Man 2",
+      "rating": 4,
+      "genres": [
+        {
+          "$id": "629ccdf0843e428c321f1135"
+        },
+        {
+          "$id": "629ce6bd843e428c321f1148"
+        }
+      ],
+      "countOpened": 2,
+      "videoUrl": "uploads/movies/ip-man.mp4",
+      "actors": [
+        {
+          "$id": "629cc78b843e428c321f1114"
+        }
+      ],
+      "slug": "ip-man-2",
+      "isSendTelegram": false,
+      "createdAt": null,
+      "updatedAt": null,
+      "parameters": {
+        "year": 2008,
+        "duration": 102,
+        "country": "Hong Kong, China"
+      }
+    }
+  ]
+}
