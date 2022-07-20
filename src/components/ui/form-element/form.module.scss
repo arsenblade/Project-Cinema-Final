@@ -1,0 +1,156 @@
+@import '../../../styles/variables.scss';
+
+.button {
+  background-color: #E30B13;
+  color: #fff;
+  border-radius: 0.65rem/* 10.4px */;
+  transition: background-color .3s ease-in-out;
+  padding: 8px 40px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #ff0009;
+  }
+} 
+
+.common {
+  position: relative;
+  border-bottom: 1px solid $gray600;
+
+
+	> label {
+    display: block;
+		> span {
+      font-size: 12px;
+      line-height: 16px;
+      color: $gray600;
+      display: block;
+		}
+	}
+}
+
+.field {
+  text-align: left;
+  margin-bottom: 24px;
+
+	input {
+    background-color: $gray700;
+    border: none;
+    outline: none;
+    color: $gray500;
+    width: 100%;
+    margin: 0;
+    padding: 8px 12px;
+    margin-top: 4px;
+	}
+}
+
+.uploadField {
+  position: relative;
+	.uploadFlex {
+    display: flex;
+
+		> .uploadImageContainer {
+      flex-shrink: 0;
+      position: relative;
+      width: 96px;
+      height: 96px;
+
+			img {
+        object-position: center;
+        object-fit: cover;
+        pointer-events: none;
+        border-radius: 6px;
+			}
+
+			> span {
+        @keyframes fade {
+          from {
+            opacity: 0;
+          }
+          to {
+            opacity: 1;
+          }
+        }
+        .animate-fade {
+          animation: fade .5s ease-in-out;
+        }
+			}
+		}
+
+		> label {
+      display: block;
+      margin-right: 24px;
+
+			.error {
+        position: relative;
+        bottom: -12px;
+			}
+
+			> span {
+        font-size: 12px;
+        line-height: 16px;
+        text-transform: uppercase;
+        color: $gray600;
+        display: block;
+        margin-bottom: 12px;
+			}
+
+			> input {
+				@apply block w-full text-sm text-gray-600 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-primary opacity-70 file:text-white transition-opacity;
+        display: block;
+        width: 100%;
+        font-size: 12px;
+        line-height: 16px;
+        color: $gray600;
+        .file\:mr-4::file-selector-button {
+          margin-right: 16px;
+        }
+        .file\:py-2::file-selector-button {
+          padding-top: 0.5rem/* 8px */;
+          padding-bottom: 0.5rem/* 8px */;
+        }
+        .file\:px-4::file-selector-button {
+          padding-left: 1rem/* 16px */;
+          padding-right: 1rem/* 16px */;
+        }
+			}
+
+			&:hover > input {
+        opacity: 1;
+			}
+		}
+	}
+}
+
+.error {
+  position: absolute;
+  bottom: -24px;
+  left: 0;
+  font-size: 12px;
+  line-height: 16px;
+  width: 100%;
+  color: $primary;
+}
+
+.editorWrapper {
+	@apply border-0;
+
+	.wrapper {
+		.toolbar {
+			@apply mt-4 outline-border-none rounded-t-lg mb-0 bg-gray-600 bg-opacity-40 p-3;
+
+			> div {
+				@apply m-0;
+
+				> div {
+					@apply outline-border-none shadow-none transition-colors border-gray-500 bg-gray-500 hover:bg-gray-300 mx-1.5;
+				}
+			}
+		}
+
+		.editor {
+			@apply h-96 border rounded-b-lg border-gray-700 px-4 text-gray-500 overflow-hidden;
+		}
+	}
+}

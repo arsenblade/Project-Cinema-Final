@@ -3,18 +3,20 @@
     {
       "id": "1",
       "email": "testADMIN@test.ru",
-      "password": "user",
+      "password": "123456",
       "isAdmin": true,
-      "favorites": [
-        {
-          "$id": "629cec88c7debc6b6d74bf16"
-        },
-        {
-          "$id": "629cee31219975cfc6f90f4d"
-        }
-      ],
+      "favorites": [],
       "createdAt": null,
       "updatedAt": null
+    },
+    {
+      "id": "3f732c63-0ff4-4a2c-9745-10a6dbf45698",
+      "email": "testUSER1@test.ru",
+      "password": "123456",
+      "isAdmin": false,
+      "favorites": [],
+      "createdAt": 1658270676447,
+      "updatedAt": 1658270676447
     }
   ],
   "genres": [
@@ -24,6 +26,15 @@
       "slug": "adventure",
       "description": "<p>A good adventure movie is the best way to escape from your usual life at least for a while and imagine yourself on board a spaceship or on a lonely raft in the endless ocean.</p>",
       "icon": "MdHiking",
+      "createdAt": null,
+      "updatedAt": null
+    },
+    {
+      "id": "2",
+      "name": "Fantasy",
+      "slug": "fantasy",
+      "description": "<p>A good adventure movie is the best way to escape from your usual life at least for a while and imagine yourself on board a spaceship or on a lonely raft in the endless ocean.</p>",
+      "icon": "MdAutoFixHigh",
       "createdAt": null,
       "updatedAt": null
     }
@@ -47,10 +58,22 @@
       "rating": 4,
       "genres": [
         {
-          "$id": "629ccdf0843e428c321f1135"
+          "id": "1",
+          "name": "Adventure",
+          "slug": "adventure",
+          "description": "<p>A good adventure movie is the best way to escape from your usual life at least for a while and imagine yourself on board a spaceship or on a lonely raft in the endless ocean.</p>",
+          "icon": "MdHiking",
+          "createdAt": null,
+          "updatedAt": null
         },
         {
-          "$id": "629ce6bd843e428c321f1148"
+          "id": "2",
+          "name": "Fantasy",
+          "slug": "fantasy",
+          "description": "<p>A good adventure movie is the best way to escape from your usual life at least for a while and imagine yourself on board a spaceship or on a lonely raft in the endless ocean.</p>",
+          "icon": "MdAutoFixHigh",
+          "createdAt": null,
+          "updatedAt": null
         }
       ],
       "countOpened": 2,

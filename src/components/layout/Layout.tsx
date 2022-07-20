@@ -2,6 +2,7 @@ import { FC } from 'react'
 import Navigation from './Navigation/Navigation'
 import styles from './Layout.module.scss'
 import SideBar from './SideBar/SideBar'
+import { useLocation } from 'react-router'
 
 interface LayoutProps {
   children: React.ReactNode

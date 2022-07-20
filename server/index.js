@@ -15,12 +15,12 @@ server.use(async (req, res, next) => {
 // Эндпоинт для логина
 server.post('/login', (req, res) => {
   try {
-    const { username, password } = req.body;
+    const { email, password } = req.body;
     const db = JSON.parse(fs.readFileSync(path.resolve(__dirname, 'db.json'), 'UTF-8'));
     const { users = [] } = db;
     // находим в бд пользователя с таким username и password
     const userFromBd = users.find(
-    (user) => user.username === username && user.password === password,
+    (user) => user.email === email && user.password === password,
     );
     if (userFromBd) {
     return res.json(userFromBd);

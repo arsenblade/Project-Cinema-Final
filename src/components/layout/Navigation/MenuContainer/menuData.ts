@@ -23,3 +23,8 @@ export const firstMenu:IMenu = {
     title: 'Trending now'
   },]
 }
+
+export const UserMenu:IMenu = {
+  title: 'General',
+  items: []
+}
