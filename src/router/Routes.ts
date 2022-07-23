@@ -1,10 +1,15 @@
 import { routesPath } from "../constant/routesPath"
 import Index from "../pages"
-import Actors from "../pages/admin/actors"
+import AdminActorsPage from "../pages/admin/actors/actors"
+import ActorsItemPage from "../pages/admin/actors/actorsItem"
 import AdminIndexPage from "../pages/admin/adminIndexPage"
-import Genres from "../pages/admin/genres"
-import Movies from "../pages/admin/movies"
-import Users from "../pages/admin/users"
+import AdminGenresPage from "../pages/admin/genres/genres"
+import GenresItemPage from "../pages/admin/genres/genresItem"
+import AdminMoviesPage from "../pages/admin/movies/movies"
+import MoviesItemPage from "../pages/admin/movies/moviesItem"
+import AdminUsersPage from "../pages/admin/users/users"
+import UsersItemPage from "../pages/admin/users/usersItem"
+
 import AuthPage from "../pages/auth"
 
 
@@ -28,18 +33,35 @@ export const adminRoutes = [
   },
   {
     path: routesPath.ADMIN_ACTORS,
-    Component: Actors
+    Component: AdminActorsPage
   },
   {
     path: routesPath.ADMIN_GENRES,
-    Component: Genres
+    Component: AdminGenresPage
   },
   {
     path: routesPath.ADMIN_MOVIES,
-    Component: Movies
+    Component: AdminMoviesPage
   },
   {
     path: routesPath.ADMIN_USERS,
-    Component: Users
+    Component: AdminUsersPage
   },
+  {
+    path: routesPath.ADMIN_ACTORS_ITEM,
+    Component: ActorsItemPage
+  },
+  {
+    path: routesPath.ADMIN_GENRES_ITEM,
+    Component: GenresItemPage
+  },
+  {
+    path: routesPath.ADMIN_MOVIES_ITEM,
+    Component: MoviesItemPage
+  },
+  {
+    path: routesPath.ADMIN_USERS_ITEM,
+    Component: UsersItemPage
+  },
+  
 ]

@@ -1,4 +1,4 @@
-import { ButtonHTMLAttributes, CSSProperties, InputHTMLAttributes, ReactNode } from "react";
+import { ButtonHTMLAttributes, CSSProperties, InputHTMLAttributes, ReactNode, TextareaHTMLAttributes } from "react";
 import { FieldError } from "react-hook-form";
 
 export interface IButton extends ButtonHTMLAttributes<HTMLButtonElement>  {
@@ -13,6 +13,10 @@ export interface IFieldProps {
 type TypeInputPropsField = InputHTMLAttributes<HTMLInputElement> & IFieldProps
 
 export interface IField extends TypeInputPropsField {}
+
+type TypeTextAreaPropsField = TextareaHTMLAttributes<HTMLTextAreaElement> & IFieldProps
+
+export interface ITextArea extends TypeTextAreaPropsField {}
 
 export interface IUploadField {
   folder?:string,

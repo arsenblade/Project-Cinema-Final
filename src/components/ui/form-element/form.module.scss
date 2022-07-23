@@ -15,8 +15,6 @@
 
 .common {
   position: relative;
-  border-bottom: 1px solid $gray600;
-
 
 	> label {
     display: block;
@@ -34,7 +32,8 @@
   margin-bottom: 24px;
 
 	input {
-    background-color: $gray700;
+    border-bottom: 1px solid $gray600 !important;
+    background-color: $gray900;
     border: none;
     outline: none;
     color: $gray500;
@@ -42,6 +41,10 @@
     margin: 0;
     padding: 8px 12px;
     margin-top: 4px;
+
+    &:focus-within {
+      border-bottom: 1px solid $primary !important; 
+    }
 	}
 }
 
@@ -103,17 +106,6 @@
         font-size: 12px;
         line-height: 16px;
         color: $gray600;
-        .file\:mr-4::file-selector-button {
-          margin-right: 16px;
-        }
-        .file\:py-2::file-selector-button {
-          padding-top: 0.5rem/* 8px */;
-          padding-bottom: 0.5rem/* 8px */;
-        }
-        .file\:px-4::file-selector-button {
-          padding-left: 1rem/* 16px */;
-          padding-right: 1rem/* 16px */;
-        }
 			}
 
 			&:hover > input {
@@ -133,24 +125,37 @@
   color: $primary;
 }
 
-.editorWrapper {
-	@apply border-0;
+.textEditorContainer {
 
-	.wrapper {
-		.toolbar {
-			@apply mt-4 outline-border-none rounded-t-lg mb-0 bg-gray-600 bg-opacity-40 p-3;
+  span {
+    font-size: 12px;
+    line-height: 16px;
+    color: $gray600;
+    display: block;
+  }
 
-			> div {
-				@apply m-0;
+  .textEditor {
+    background-color: $gray900;
+    padding: 10px 12px;
+    border: none;
+    border-bottom: 1px solid $gray500;
+    color: $gray500;
+    outline: none;
+    resize: none;
 
-				> div {
-					@apply outline-border-none shadow-none transition-colors border-gray-500 bg-gray-500 hover:bg-gray-300 mx-1.5;
-				}
-			}
-		}
+    &:focus-within {
+      border-bottom: 1px solid $primary !important; 
+    }
+  }
 
-		.editor {
-			@apply h-96 border rounded-b-lg border-gray-700 px-4 text-gray-500 overflow-hidden;
-		}
-	}
+  .textEditor::-webkit-scrollbar  {
+    width: 8px;
+    background-color: $gray900;
+  }
+
+  .textEditor::-webkit-scrollbar-thumb {
+    width: 8px;
+    background-color: $gray950;
+    border-radius: 30px;
+  }
 }

@@ -1,31 +1,31 @@
 {
   "users": [
     {
-      "id": "1",
       "email": "testADMIN@test.ru",
-      "password": "123456",
       "isAdmin": true,
+      "password": "123456",
+      "id": "1",
       "favorites": [],
-      "createdAt": null,
-      "updatedAt": null
+      "createdAt": "1658507384507",
+      "updatedAt": "1658510314606"
     },
     {
-      "id": "3f732c63-0ff4-4a2c-9745-10a6dbf45698",
       "email": "testUSER1@test.ru",
       "password": "123456",
       "isAdmin": false,
       "favorites": [],
-      "createdAt": 1658270676447,
-      "updatedAt": 1658270676447
+      "id": "3f732c63-0ff4-4a2c-9745-10a6dbf45698",
+      "createdAt": "1658507384507",
+      "updatedAt": "1658507384507"
     }
   ],
   "genres": [
     {
-      "id": "1",
       "name": "Adventure",
-      "slug": "adventure",
-      "description": "<p>A good adventure movie is the best way to escape from your usual life at least for a while and imagine yourself on board a spaceship or on a lonely raft in the endless ocean.</p>",
       "icon": "MdHiking",
+      "description": "A good adventure movie is the best way to escape from your usual life at least for a while and imagine yourself on board a spaceship or on a lonely raft in the endless ocean.",
+      "slug": "adventure",
+      "id": "1",
       "createdAt": null,
       "updatedAt": null
     },
@@ -33,7 +33,7 @@
       "id": "2",
       "name": "Fantasy",
       "slug": "fantasy",
-      "description": "<p>A good adventure movie is the best way to escape from your usual life at least for a while and imagine yourself on board a spaceship or on a lonely raft in the endless ocean.</p>",
+      "description": "A good adventure movie is the best way to escape from your usual life at least for a while and imagine yourself on board a spaceship or on a lonely raft in the endless ocean.",
       "icon": "MdAutoFixHigh",
       "createdAt": null,
       "updatedAt": null
@@ -45,6 +45,16 @@
       "name": "Tom Holland",
       "photo": "uploads/actors/holland.jpg",
       "slug": "tom holland",
+      "countMovies": 0,
+      "createdAt": null,
+      "updatedAt": null
+    },
+    {
+      "id": "2",
+      "name": "Jim Kerry",
+      "photo": "uploads/actors/jim.jpg",
+      "slug": "jim kerry",
+      "countMovies": 0,
       "createdAt": null,
       "updatedAt": null
     }
@@ -56,33 +66,12 @@
       "bigPoster": "uploads/movies/ip-man.jpg",
       "title": "Ip Man 2",
       "rating": 4,
-      "genres": [
-        {
-          "id": "1",
-          "name": "Adventure",
-          "slug": "adventure",
-          "description": "<p>A good adventure movie is the best way to escape from your usual life at least for a while and imagine yourself on board a spaceship or on a lonely raft in the endless ocean.</p>",
-          "icon": "MdHiking",
-          "createdAt": null,
-          "updatedAt": null
-        },
-        {
-          "id": "2",
-          "name": "Fantasy",
-          "slug": "fantasy",
-          "description": "<p>A good adventure movie is the best way to escape from your usual life at least for a while and imagine yourself on board a spaceship or on a lonely raft in the endless ocean.</p>",
-          "icon": "MdAutoFixHigh",
-          "createdAt": null,
-          "updatedAt": null
-        }
-      ],
+      "genres": [],
       "countOpened": 2,
       "videoUrl": "uploads/movies/ip-man.mp4",
-      "actors": [
-        {
-          "$id": "629cc78b843e428c321f1114"
-        }
-      ],
+      "actors": [{
+        "id": "1"
+      }],
       "slug": "ip-man-2",
       "isSendTelegram": false,
       "createdAt": null,

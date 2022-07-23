@@ -3,10 +3,8 @@ import { IUser } from "../../types/user.types"
 
 export const saveTokenStorage = (token: string, user: IUser) => {
   Cookies.set('accessToken', token)
-  localStorage.setItem('user', JSON.stringify({
-    email: user.email,
-    isAdmin: user.isAdmin
-  }))
+  console.log(user)
+  localStorage.setItem('user', JSON.stringify(user))
 }
 
 export const removeTokenStorage = () => {

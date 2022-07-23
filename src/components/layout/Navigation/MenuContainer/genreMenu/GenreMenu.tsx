@@ -6,7 +6,6 @@ import styles from './GenreMenu.module.scss'
 
 const GenreMenu:FC = () => {
   const {data, isLoading} = usePopularGenre()
-
   return (
     isLoading ?
     <div className={styles.loaderContainer}>
