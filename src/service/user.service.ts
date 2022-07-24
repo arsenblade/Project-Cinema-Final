@@ -22,7 +22,7 @@ export const UserService = {
   async getProfile(email: string) {
     const response = await axiosPrivate.get<IUser[]>(getUsersUrl(''))
     const user = response.data.find(currentUser => currentUser.email === email)
-    return user 
+    return user
   },
 
   async getById(id: string) {

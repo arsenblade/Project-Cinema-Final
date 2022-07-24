@@ -22,14 +22,14 @@ export const useMovieEdit = (setValue:UseFormSetValue<IMovieEditInput>) => {
       })
     },
     onError: () => {
-      MyToast('Error genre', false)
+      MyToast('Error movie', false)
     }
   })
 
   const {isLoading, data} = useQuery(['movie classic', params.id], () => 
   MovieService.getByIdClassic(String(params.id)), {
     onError: () => {
-      MyToast('Error genre', false)
+      MyToast('Error movie', false)
     }
   })
 

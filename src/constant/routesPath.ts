@@ -11,7 +11,8 @@ export enum routesPath {
   ADMIN_MOVIES_ITEM = '/manage/movies/:id',
   ADMIN_ACTORS_ITEM = '/manage/actors/:id',
   ADMIN_USERS_ITEM = '/manage/users/:id',
-  PROFILE_ROUTE = '/profile'
+  PROFILE_ROUTE = '/profile',
+  ERROR_404 = '*'
 }
 
 export const getAdminHomeUrl = () => `/manage`

@@ -62,8 +62,8 @@
   "movies": [
     {
       "id": "1",
-      "poster": "poster-ip-man",
-      "bigPoster": "big-poster-ip-man",
+      "poster": "ip-man-poster.jpg",
+      "bigPoster": "ip-man-big-poster.jpg",
       "title": "Ip Man 2",
       "rating": 4,
       "genres": [
@@ -87,13 +87,13 @@
         }
       ],
       "countOpened": 2,
-      "videoUrl": "trailer-ip-man",
+      "videoUrl": "ip-man-video.mp4",
       "actors": [
         {
-          "id": "1",
           "name": "Tom Holland",
           "photo": "uploads/actors/holland.jpg",
           "slug": "tom holland",
+          "id": "1",
           "countMovies": 0,
           "createdAt": null,
           "updatedAt": null
@@ -120,8 +120,8 @@
     },
     {
       "id": "727011ab-4886-4f29-9d8d-10423cb7edde",
-      "poster": "poster-ip-man",
-      "bigPoster": "big-poster-ip-man",
+      "poster": "/uploads/cinema/mad-max-poster.jpg",
+      "bigPoster": "/uploads/cinema/mad-max-big-poster.jpg",
       "title": "Mad Max",
       "rating": 0,
       "genres": [
@@ -136,12 +136,12 @@
         }
       ],
       "countOpened": 0,
-      "videoUrl": "trailer-ip-man",
+      "videoUrl": "/uploads/cinema/ip-man.mp4",
       "actors": [
         {
           "id": "2",
           "name": "Jim Kerry",
-          "photo": "uploads/actors/jim.jpg",
+          "photo": "/uploads/actors/jim.jpg",
           "slug": "jim kerry",
           "countMovies": 0,
           "createdAt": null,

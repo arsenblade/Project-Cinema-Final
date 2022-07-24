@@ -8,6 +8,13 @@ body {
   background-color: $gray900;
 }
 
+.error404 {
+  color: rgba($color: white, $alpha: 0.8);
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 600;
+}
+
 html::-webkit-scrollbar  {
   background-color: $gray900;
   width: 8px;

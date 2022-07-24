@@ -1,5 +1,6 @@
 import { routesPath } from "../constant/routesPath"
 import Index from "../pages"
+import Page404 from "../pages/404"
 import AdminActorsPage from "../pages/admin/actors/actors"
 import ActorsItemPage from "../pages/admin/actors/actorsItem"
 import AdminIndexPage from "../pages/admin/adminIndexPage"
@@ -22,7 +23,11 @@ export const publicRoutes = [
   {
     path: routesPath.AUTH_ROUTE,
     Component: AuthPage
-  }
+  },
+  {
+    path: routesPath.ERROR_404,
+    Component: Page404
+  },
 ]
 
 export const authRoutes = [

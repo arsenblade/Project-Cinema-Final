@@ -2,6 +2,7 @@ import { axiosPrivate, axiosPublic } from "../api/interseptors"
 import { IMovieEditInput } from "../components/screens/admin/movies/movie/movie-edit.interface";
 import { getMoviesUrl } from "../constant/serverPath"
 import { IActor, IGenre, IMovie } from "../types/movies/movie.types"
+import { formatUrlUploads } from "../utils/formatUrlUploads";
 const uuid = require("uuid");
 
 export const MovieService = {
@@ -55,9 +56,9 @@ export const MovieService = {
       dataMovie.title = dataField && dataField.title;
       dataMovie.parameters = dataField && dataField.parameters
       dataMovie.slug = dataField && dataField.slug
-      dataMovie.poster = dataField && dataField.poster
-      dataMovie.bigPoster = dataField && dataField.bigPoster
-      dataMovie.videoUrl = dataField && dataField.videoUrl
+      dataMovie.poster ='/uploads/cinema/' + dataField && dataField.poster + '.jpg'
+      dataMovie.bigPoster ='/uploads/cinema/' + dataField && dataField.bigPoster + '.jpg'
+      dataMovie.videoUrl ='/uploads/cinema/' + dataField && dataField.videoUrl + '.mp4'
     }
 
     return await axiosPrivate.put<IMovie>(getMoviesUrl(id), dataMovie)
@@ -69,12 +70,15 @@ export const MovieService = {
 
   async getByIdMovieEditInput(id: string) {
     const {data} = await axiosPrivate.get<IMovie>(getMoviesUrl(id))
+    const poster = formatUrlUploads(data.poster)
+    const bigPoster = formatUrlUploads(data.bigPoster)
+    const videoUrl = formatUrlUploads(data.videoUrl)
     const defaultMovies: IMovieEditInput = {
-      poster: data.poster,
-      bigPoster: data.bigPoster,
+      poster,
+      bigPoster,
       title: data.title,
       genres: data.genres.map(genre => genre.id),
-      videoUrl: data.videoUrl,
+      videoUrl,
       actors: data.actors.map(actor => actor.id),
       slug: data.slug,
       parameters: {
