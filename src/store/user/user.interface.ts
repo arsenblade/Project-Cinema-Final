@@ -2,7 +2,8 @@ import { IUser } from "../../types/user.types"
 
 export interface IUserState {
   email: string,
-  isAdmin: boolean
+  isAdmin: boolean,
+  id: string
 }
 
 export interface IToken {

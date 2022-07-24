@@ -11,6 +11,7 @@ import AdminUsersPage from "../pages/admin/users/users"
 import UsersItemPage from "../pages/admin/users/usersItem"
 
 import AuthPage from "../pages/auth"
+import ProfilePage from "../pages/profile"
 
 
 export const publicRoutes = [
@@ -24,7 +25,12 @@ export const publicRoutes = [
   }
 ]
 
-export const authRoutes = []
+export const authRoutes = [
+  {
+    path: routesPath.PROFILE_ROUTE,
+    Component: ProfilePage
+  },
+]
 
 export const adminRoutes = [
   {

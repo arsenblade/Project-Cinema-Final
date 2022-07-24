@@ -19,6 +19,12 @@ export const UserService = {
     return response
   },
 
+  async getProfile(email: string) {
+    const response = await axiosPrivate.get<IUser[]>(getUsersUrl(''))
+    const user = response.data.find(currentUser => currentUser.email === email)
+    return user 
+  },
+
   async getById(id: string) {
     return await axiosPrivate.get<IUser>(getUsersUrl(id))
   },
