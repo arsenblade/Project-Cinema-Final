@@ -41,10 +41,10 @@
   ],
   "actors": [
     {
-      "id": "1",
       "name": "Tom Holland",
       "photo": "uploads/actors/holland.jpg",
       "slug": "tom holland",
+      "id": "1",
       "countMovies": 0,
       "createdAt": null,
       "updatedAt": null
@@ -62,24 +62,100 @@
   "movies": [
     {
       "id": "1",
-      "poster": "uploads/movies/ip-man-small.jpg",
-      "bigPoster": "uploads/movies/ip-man.jpg",
+      "poster": "poster-ip-man",
+      "bigPoster": "big-poster-ip-man",
       "title": "Ip Man 2",
       "rating": 4,
-      "genres": [],
+      "genres": [
+        {
+          "name": "Adventure",
+          "icon": "MdHiking",
+          "description": "A good adventure movie is the best way to escape from your usual life at least for a while and imagine yourself on board a spaceship or on a lonely raft in the endless ocean.",
+          "slug": "adventure",
+          "id": "1",
+          "createdAt": null,
+          "updatedAt": null
+        },
+        {
+          "id": "2",
+          "name": "Fantasy",
+          "slug": "fantasy",
+          "description": "A good adventure movie is the best way to escape from your usual life at least for a while and imagine yourself on board a spaceship or on a lonely raft in the endless ocean.",
+          "icon": "MdAutoFixHigh",
+          "createdAt": null,
+          "updatedAt": null
+        }
+      ],
       "countOpened": 2,
-      "videoUrl": "uploads/movies/ip-man.mp4",
-      "actors": [{
-        "id": "1"
-      }],
+      "videoUrl": "trailer-ip-man",
+      "actors": [
+        {
+          "id": "1",
+          "name": "Tom Holland",
+          "photo": "uploads/actors/holland.jpg",
+          "slug": "tom holland",
+          "countMovies": 0,
+          "createdAt": null,
+          "updatedAt": null
+        },
+        {
+          "id": "2",
+          "name": "Jim Kerry",
+          "photo": "uploads/actors/jim.jpg",
+          "slug": "jim kerry",
+          "countMovies": 0,
+          "createdAt": null,
+          "updatedAt": null
+        }
+      ],
       "slug": "ip-man-2",
       "isSendTelegram": false,
       "createdAt": null,
       "updatedAt": null,
       "parameters": {
-        "year": 2008,
-        "duration": 102,
+        "year": "2008",
+        "duration": "102",
         "country": "Hong Kong, China"
+      }
+    },
+    {
+      "id": "727011ab-4886-4f29-9d8d-10423cb7edde",
+      "poster": "poster-ip-man",
+      "bigPoster": "big-poster-ip-man",
+      "title": "Mad Max",
+      "rating": 0,
+      "genres": [
+        {
+          "name": "Adventure",
+          "icon": "MdHiking",
+          "description": "A good adventure movie is the best way to escape from your usual life at least for a while and imagine yourself on board a spaceship or on a lonely raft in the endless ocean.",
+          "slug": "adventure",
+          "id": "1",
+          "createdAt": null,
+          "updatedAt": null
+        }
+      ],
+      "countOpened": 0,
+      "videoUrl": "trailer-ip-man",
+      "actors": [
+        {
+          "id": "2",
+          "name": "Jim Kerry",
+          "photo": "uploads/actors/jim.jpg",
+          "slug": "jim kerry",
+          "countMovies": 0,
+          "createdAt": null,
+          "updatedAt": null
+        }
+      ],
+      "slug": "mad-max",
+      "isSendTelegram": false,
+      "createdAt": 1658680498582,
+      "updatedAt": 1658680498582,
+      "parameters": {
+        "year": "2014",
+        "duration": "102",
+        "country": "USA"
       }
     }
   ]

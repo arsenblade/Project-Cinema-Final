@@ -37,9 +37,9 @@ export const useMovies = () => {
 			onError() {
         MyToast('Error create', false)
 			},
-			onSuccess({data: id}) {
+			onSuccess(data) {
         MyToast('Create was successful', true)
-        navigate(getAdminUrl(`movies/${id}`))
+        navigate(getAdminUrl(`movies/${data}`))
 			},
 		})
 

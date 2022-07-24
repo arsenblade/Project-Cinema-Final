@@ -42,14 +42,25 @@ export const MovieService = {
       }
     }
 
-    return await axiosPrivate.post<IMovie>(getMoviesUrl(''), defaultMovies)
+    await axiosPrivate.post<IMovie>(getMoviesUrl(''), defaultMovies)
+
+    return defaultMovies.id
   },
 
   
   async update(id: string, dataField: IMovieEditInput, dataMovie: IMovie | null, dataGenres: IGenre[] | null, dataActors: IActor[] | null) {
-    console.log(dataField)
-    console.log(dataMovie)
-    return await dataMovie
+    if(dataMovie) {
+      dataMovie.genres = dataGenres ? dataGenres?.filter(genre => dataField.genres.some(g => g === genre.id)) : []
+      dataMovie.actors = dataActors ? dataActors?.filter(actor => dataField.actors.some(a => a === actor.id)) : []
+      dataMovie.title = dataField && dataField.title;
+      dataMovie.parameters = dataField && dataField.parameters
+      dataMovie.slug = dataField && dataField.slug
+      dataMovie.poster = dataField && dataField.poster
+      dataMovie.bigPoster = dataField && dataField.bigPoster
+      dataMovie.videoUrl = dataField && dataField.videoUrl
+    }
+
+    return await axiosPrivate.put<IMovie>(getMoviesUrl(id), dataMovie)
   },
 
   async getByIdClassic(id: string) {
@@ -71,8 +82,7 @@ export const MovieService = {
         duration: data.parameters.duration,
         country: data.parameters.country
       },
-      id: data.id,
-      description: data.description
+      id: data.id
     }
     return defaultMovies
   },

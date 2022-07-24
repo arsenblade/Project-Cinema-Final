@@ -87,6 +87,31 @@ const MovieEdit: FC = () => {
 							style={{ width: '31%' }}
 						/>
 
+						<Field
+							{...register('poster', {
+								required: 'Name poster is required!',
+							})}
+							placeholder="Poster"
+							error={errors.poster}
+							style={{ width: '31%' }}
+						/>
+						<Field
+							{...register('bigPoster', {
+								required: 'Name big poster is required!',
+							})}
+							placeholder="Big Poster"
+							error={errors.bigPoster}
+							style={{ width: '31%' }}
+						/>
+						<Field
+							{...register('videoUrl', {
+								required: 'Name video is required!',
+							})}
+							placeholder="Video"
+							error={errors.videoUrl}
+							style={{ width: '31%' }}
+						/>
+
 						<Controller
 							name="genres"
 							control={control}

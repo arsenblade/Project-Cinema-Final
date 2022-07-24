@@ -39,6 +39,12 @@ const ActorEdit = () => {
                 error={errors.slug}
                 generate={() => setValue('slug', generateSlug(getValues('name')))}
               />
+
+              <Field
+                {...register('photo', {required: 'Name photo is required'})}
+                placeholder='Photo'
+                error={errors.photo}
+              />
             </div>
             <Button>Update</Button>
           </>
