@@ -6,7 +6,7 @@ import styles from './Gallery.module.scss'
 import { IGalleryItemProps } from './gallery.interface'
 import { Link } from 'react-router-dom'
 
-const GalleryItem:FC<IGalleryItemProps> = ({item, variant}) => {
+const GalleryItem:FC<IGalleryItemProps> = ({item, variant, height = 288, width = 165}) => {
   return (
     <Link to={item.link}
       className={cn(styles.item, {
@@ -19,8 +19,8 @@ const GalleryItem:FC<IGalleryItemProps> = ({item, variant}) => {
           alt={item.name}
           src={item.posterPath}
           draggable={false}
-          width={165}
-          height={288}
+          width={width}
+          height={height}
         />
         {item.content && (
           <div className={styles.content}>

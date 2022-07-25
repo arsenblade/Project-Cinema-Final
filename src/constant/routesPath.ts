@@ -12,6 +12,8 @@ export enum routesPath {
   ADMIN_ACTORS_ITEM = '/manage/actors/:id',
   ADMIN_USERS_ITEM = '/manage/users/:id',
   PROFILE_ROUTE = '/profile',
+  FRESH_ROUTE = '/fresh',
+  TRENDING_ROUTE = '/trending',
   ERROR_404 = '*'
 }
 

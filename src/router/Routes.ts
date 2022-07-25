@@ -12,7 +12,9 @@ import AdminUsersPage from "../pages/admin/users/users"
 import UsersItemPage from "../pages/admin/users/usersItem"
 
 import AuthPage from "../pages/auth"
+import FreshPage from "../pages/fresh"
 import ProfilePage from "../pages/profile"
+import TrendingPage from "../pages/trending"
 
 
 export const publicRoutes = [
@@ -27,6 +29,14 @@ export const publicRoutes = [
   {
     path: routesPath.ERROR_404,
     Component: Page404
+  },
+  {
+    path: routesPath.FRESH_ROUTE,
+    Component: FreshPage
+  },
+  {
+    path: routesPath.TRENDING_ROUTE,
+    Component: TrendingPage
   },
 ]
 

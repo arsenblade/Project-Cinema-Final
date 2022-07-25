@@ -12,5 +12,7 @@ export interface IGalleryItem {
 
 export interface IGalleryItemProps {
   item: IGalleryItem,
+  width?: number,
+  height?: number,
   variant: 'vertical' | 'horizontal'
 }

@@ -31,6 +31,7 @@ export interface IMovie {
   genres: IGenre[],
   actors: IActor[],
   countOpened: number,
+  createdAt: number,
   videoUrl: string,
   rating: number,
   slug: string

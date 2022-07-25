@@ -79,6 +79,7 @@ export const MovieService = {
       title: data.title,
       genres: data.genres.map(genre => genre.id),
       videoUrl,
+      createdAt: data.createdAt,
       actors: data.actors.map(actor => actor.id),
       slug: data.slug,
       parameters: {
