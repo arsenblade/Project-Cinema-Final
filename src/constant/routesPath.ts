@@ -14,6 +14,7 @@ export enum routesPath {
   PROFILE_ROUTE = '/profile',
   FRESH_ROUTE = '/fresh',
   TRENDING_ROUTE = '/trending',
+  DISCOVERY_ROUTE = '/genres',
   ERROR_404 = '*'
 }
 

@@ -12,6 +12,7 @@ import AdminUsersPage from "../pages/admin/users/users"
 import UsersItemPage from "../pages/admin/users/usersItem"
 
 import AuthPage from "../pages/auth"
+import DiscoveryPage from "../pages/discovery"
 import FreshPage from "../pages/fresh"
 import ProfilePage from "../pages/profile"
 import TrendingPage from "../pages/trending"
@@ -37,6 +38,10 @@ export const publicRoutes = [
   {
     path: routesPath.TRENDING_ROUTE,
     Component: TrendingPage
+  },
+  {
+    path: routesPath.DISCOVERY_ROUTE,
+    Component: DiscoveryPage
   },
 ]
 
