@@ -35,3 +35,39 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.slide-animation-enter {
+	opacity: 0;
+	transform: scale(0.9);
+}
+.slide-animation-enter-active {
+	opacity: 1;
+	transform: translateX(0);
+	transition: opacity 300ms, transform 300ms;
+}
+.slide-animation-exit {
+	opacity: 1;
+}
+.slide-animation-exit-active {
+	opacity: 0;
+	transform: scale(0.9);
+	transition: opacity 300ms, transform 300ms;
+}
+
+.arrow-animation-enter {
+	opacity: 0;
+	transform: scale(0.9);
+}
+.arrow-animation-enter-active {
+	opacity: 1;
+	transform: translateX(0);
+	transition: opacity 300ms, transform 300ms;
+}
+.arrow-animation-exit {
+	opacity: 1;
+}
+.arrow-animation-exit-active {
+	opacity: 0;
+	transform: scale(0.9);
+	transition: opacity 300ms, transform 300ms;
+}

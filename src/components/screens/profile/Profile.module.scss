@@ -4,3 +4,14 @@
   line-height: 36px;
   font-weight: 600;
 }
+
+.loader {
+  &:nth-child(1) {
+    height: 54px;
+  }
+
+  &:nth-child(3) {
+    height: 54px;
+    margin-top: 24px;
+  }
+}

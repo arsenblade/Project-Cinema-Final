@@ -42,7 +42,7 @@
   "actors": [
     {
       "name": "Tom Holland",
-      "photo": "uploads/actors/holland.jpg",
+      "photo": "/uploads/actors/tom-holland.jpg",
       "slug": "tom holland",
       "id": "1",
       "countMovies": 0,
@@ -51,9 +51,9 @@
     },
     {
       "id": "2",
-      "name": "Jim Kerry",
-      "photo": "uploads/actors/jim.jpg",
-      "slug": "jim kerry",
+      "name": "Will Smith",
+      "photo": "/uploads/actors/will-smith.jpg",
+      "slug": "will-smith",
       "countMovies": 0,
       "createdAt": null,
       "updatedAt": null
@@ -62,8 +62,8 @@
   "movies": [
     {
       "id": "1",
-      "poster": "ip-man-poster.jpg",
-      "bigPoster": "ip-man-big-poster.jpg",
+      "poster": "/uploads/cinema/ip-man-poster.jpg",
+      "bigPoster": "/uploads/cinema/ip-man-big-poster.jpg",
       "title": "Ip Man 2",
       "rating": 4,
       "genres": [
@@ -87,7 +87,7 @@
         }
       ],
       "countOpened": 2,
-      "videoUrl": "ip-man-video.mp4",
+      "videoUrl": "/uploads/cinema/ip-man-video.mp4",
       "actors": [
         {
           "name": "Tom Holland",
@@ -141,7 +141,7 @@
         {
           "id": "2",
           "name": "Jim Kerry",
-          "photo": "/uploads/actors/jim.jpg",
+          "photo": "uploads/actors/jim.jpg",
           "slug": "jim kerry",
           "countMovies": 0,
           "createdAt": null,
@@ -155,6 +155,46 @@
       "parameters": {
         "year": "2014",
         "duration": "102",
+        "country": "USA"
+      }
+    },
+    {
+      "id": "1e1ddc5f-bed7-4e3e-8814-79540e50e84f",
+      "poster": "/uploads/cinema/avatar-poster.jpg",
+      "bigPoster": "/uploads/cinema/avatar-big-poster.jpg",
+      "title": "Avatar",
+      "rating": 0,
+      "genres": [
+        {
+          "name": "Adventure",
+          "icon": "MdHiking",
+          "description": "A good adventure movie is the best way to escape from your usual life at least for a while and imagine yourself on board a spaceship or on a lonely raft in the endless ocean.",
+          "slug": "adventure",
+          "id": "1",
+          "createdAt": null,
+          "updatedAt": null
+        }
+      ],
+      "countOpened": 0,
+      "videoUrl": "/uploads/cinema/avatar-video.mp4",
+      "actors": [
+        {
+          "name": "Tom Holland",
+          "photo": "uploads/actors/holland.jpg",
+          "slug": "tom holland",
+          "id": "1",
+          "countMovies": 0,
+          "createdAt": null,
+          "updatedAt": null
+        }
+      ],
+      "slug": "avatar",
+      "isSendTelegram": false,
+      "createdAt": 1658699792574,
+      "updatedAt": 1658699792574,
+      "parameters": {
+        "year": "2012",
+        "duration": "148",
         "country": "USA"
       }
     }

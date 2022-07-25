@@ -26,7 +26,7 @@ const PopularMovies:FC = () => {
           <h3>Opened {mostPopularMovie.countOpened} times</h3>
           <Link to={getMoviesUrl(mostPopularMovie.slug)}>
             <img
-              src={mostPopularMovie.poster} 
+              src={mostPopularMovie.bigPoster} 
               alt='Most popular movie.' 
               width={285} 
               height={176} 

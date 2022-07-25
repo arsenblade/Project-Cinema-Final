@@ -18,7 +18,7 @@ const Profile = () => {
       <h1 className={styles.header}>Edit user</h1>
       <form onSubmit={handleSubmit(onSubmit)} className={formStyles.form}>
         {isLoading ?
-          <SkeletonLoader count={2} />
+          <SkeletonLoader count={2} className={styles.loader}/>
         :
           <>
             <AuthFields register={register} formState={formState}  />

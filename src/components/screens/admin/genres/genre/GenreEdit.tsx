@@ -25,7 +25,9 @@ const GenreEdit = () => {
       <h1 className={styles.header}>Edit genre</h1>
       <form onSubmit={handleSubmit(onSubmit)} className={formStyles.form}>
         {isLoading ?
-          <SkeletonLoader count={3} />
+          <div className={styles.loaderContainer}>
+            <SkeletonLoader count={4} className={styles.loader}/>
+          </div>
         :
           <>
             <div className={formStyles.fields}>

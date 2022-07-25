@@ -56,9 +56,9 @@ export const MovieService = {
       dataMovie.title = dataField && dataField.title;
       dataMovie.parameters = dataField && dataField.parameters
       dataMovie.slug = dataField && dataField.slug
-      dataMovie.poster ='/uploads/cinema/' + dataField && dataField.poster + '.jpg'
-      dataMovie.bigPoster ='/uploads/cinema/' + dataField && dataField.bigPoster + '.jpg'
-      dataMovie.videoUrl ='/uploads/cinema/' + dataField && dataField.videoUrl + '.mp4'
+      dataMovie.poster = dataField && '/uploads/cinema/' + dataField.poster + '.jpg'
+      dataMovie.bigPoster = dataField && '/uploads/cinema/' + dataField.bigPoster + '.jpg'
+      dataMovie.videoUrl = dataField && '/uploads/cinema/' + dataField.videoUrl + '.mp4'
     }
 
     return await axiosPrivate.put<IMovie>(getMoviesUrl(id), dataMovie)

@@ -44,7 +44,9 @@ const MovieEdit: FC = () => {
       <AdminNavigation />
 			<h1 className={styles.header}>Edit movie</h1>
 			{isLoading ? (
-				<SkeletonLoader count={5} />
+				<div className={styles.loaderContainer}>
+					<SkeletonLoader count={10} className={styles.loader}/>
+				</div>
 			) : (
 				<form onSubmit={handleSubmit(onSubmit)} className={formStyles.form}>
 					<div className={formStyles.fields}>

@@ -21,7 +21,9 @@ const UserEdit = () => {
       <h1 className={styles.header}>Edit user</h1>
       <form onSubmit={handleSubmit(onSubmit)} className={formStyles.form}>
         {isLoading ?
-          <SkeletonLoader count={3} />
+          <div className={styles.loaderContainer}>
+            <SkeletonLoader count={3} className={styles.loader} />
+          </div>
         :
           <>
             <AuthFields register={register} formState={formState}  />
