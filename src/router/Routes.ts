@@ -14,6 +14,7 @@ import UsersItemPage from "../pages/admin/users/usersItem"
 import AuthPage from "../pages/auth"
 import DiscoveryPage from "../pages/discovery"
 import FreshPage from "../pages/fresh"
+import GenrePage from "../pages/genre"
 import ProfilePage from "../pages/profile"
 import TrendingPage from "../pages/trending"
 
@@ -42,6 +43,10 @@ export const publicRoutes = [
   {
     path: routesPath.DISCOVERY_ROUTE,
     Component: DiscoveryPage
+  },
+  {
+    path: routesPath.DISCOVERY_ITEM_ROUTE,
+    Component: GenrePage
   },
 ]
 

@@ -3,7 +3,6 @@ import { useDiscovery } from './useDiscovery'
 
 const Discovery = () => {
   const {genreDiscovery, isLoading} = useDiscovery()
-  console.log(genreDiscovery)
 
   return (
     <Collections

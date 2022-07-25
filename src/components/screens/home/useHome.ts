@@ -39,16 +39,22 @@ export const useHome = () => {
   })).sort((firstMovie, secondMovie) => secondMovie.countOpened - firstMovie.countOpened) : []
 
 
-  const bestActors: IGalleryItem[] = dataActor ? dataActor.slice(0, 7).map(a => ({
-    name: a.name,
-    posterPath: a.photo,
-    link: getActorsUrl(a.slug),
-    countMovies: a.countMovies,
-    content: {
-      title: a.name,
-      subTitle: `+${a.countMovies} movies`
+  const bestActors: IGalleryItem[] = dataActor ? dataActor.slice(0, 7).map(a => {
+
+    const countMovies = dataMovie ? dataMovie.filter(m => m.actors.some((actor) => actor.id === a.id)) : []
+    console.log(countMovies)
+
+    return {
+      name: a.name,
+      posterPath: a.photo,
+      link: getActorsUrl(a.slug),
+      countMovies: countMovies.length,
+      content: {
+        title: a.name,
+        subTitle: `+${countMovies.length} movies`
+      }
     }
-  })).sort((firstActor, secondActor) => secondActor.countMovies - firstActor.countMovies)
+  }).sort((firstActor, secondActor) => secondActor.countMovies - firstActor.countMovies)
   : []
 
   return useMemo(() => ({

@@ -37,7 +37,6 @@ export const UserService = {
       data.isAdmin = dataField.isAdmin
     }
 
-    console.log(data)
     return await axiosPrivate.put<IUser>(getUsersUrl(id), data)
   }
 }

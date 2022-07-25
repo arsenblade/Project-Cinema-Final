@@ -1,6 +1,6 @@
 import { axiosPrivate, axiosPublic } from "../api/interseptors"
-import { getGenresUrl } from "../constant/serverPath"
-import { IGenre } from "../types/movies/movie.types"
+import { getGenresUrl, getMoviesUrl } from "../constant/serverPath"
+import { IGenre, IMovie } from "../types/movies/movie.types"
 const uuid = require("uuid");
 
 
@@ -34,6 +34,25 @@ export const GenreService = {
     await axiosPrivate.post<IGenre>(getGenresUrl(''), defaultGenre)
 
     return defaultGenre.id
+  },
+
+  async getBySlug(slug: string) {
+    const {data: dataGenre} = await axiosPublic.get<IGenre[]>(getGenresUrl(''), {
+      params: {
+        slug_like: slug ? slug : ''
+      }
+    })
+
+    const {data: dataMovies} = await axiosPublic.get<IMovie[]>(getMoviesUrl(''), {
+      params: {
+        q: dataGenre[0].id ? dataGenre[0].id : ''
+      }
+    })
+
+    return {
+      dataGenre: dataGenre[0],
+      dataMovies
+    }
   },
 
   async getById(id: string) {

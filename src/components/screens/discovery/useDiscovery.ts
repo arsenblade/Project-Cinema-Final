@@ -35,7 +35,7 @@ export const useDiscovery = () => {
           if(g.slug === genre.slug && imageMovie === '') {
             imageMovie = movie.bigPoster
 
-            movieList.filter((m) => m !== movie)
+            movieList = movieList.filter((m) => m !== movie)
           }
         })
       })

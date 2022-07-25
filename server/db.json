@@ -21,22 +21,58 @@
   ],
   "genres": [
     {
+      "id": "31e97419-c3ee-4a91-b6aa-63616c09b313",
       "name": "Adventure",
-      "icon": "MdHiking",
-      "description": "A good adventure movie is the best way to escape from your usual life at least for a while and imagine yourself on board a spaceship or on a lonely raft in the endless ocean.",
       "slug": "adventure",
-      "id": "1",
-      "createdAt": null,
-      "updatedAt": null
+      "description": "A good adventure movie is the best way to escape from your usual life at least for a while and imagine yourself on board a spaceship or on a lonely raft in the endless ocean.",
+      "icon": "MdHiking",
+      "createdAt": 1658763325469,
+      "updatedAt": 1658763325469
     },
     {
-      "id": "2",
+      "id": "7b9ae89b-a331-497b-9b64-fed0f36a7f06",
       "name": "Fantasy",
       "slug": "fantasy",
-      "description": "A good adventure movie is the best way to escape from your usual life at least for a while and imagine yourself on board a spaceship or on a lonely raft in the endless ocean.",
-      "icon": "MdAutoFixHigh",
-      "createdAt": null,
-      "updatedAt": null
+      "description": "Situations, places and/or events that don’t comply with natural laws or settings. They often involve some form of magic or supernatural elements. There are sometimes magical creatures or beings too.",
+      "icon": "MdHiking",
+      "createdAt": 1658763344042,
+      "updatedAt": 1658763344042
+    },
+    {
+      "name": "Horror",
+      "icon": "MdOfflineBolt",
+      "description": "The objective of a horror movie is to scare the viewer and if possible, make them scream (often done with a jump scare). Horror movies often feature a monster, some type of evil entity or a terrible/frightening situation.",
+      "slug": "horror",
+      "id": "643e9bcf-26dd-49a3-88fb-2b5c8670d567",
+      "createdAt": 1658763397893,
+      "updatedAt": 1658763397893
+    },
+    {
+      "id": "a8d24ccf-79e3-4fd2-b18d-8c95b9671b40",
+      "name": "Action",
+      "slug": "action",
+      "description": "This type of movie generally involves a lot of action scenes including violence, like fighting or shoot-outs (with weapons), car chases and often lots of explosions. Some subgenres considered action movies include: disaster films, martial arts films, spy films and superhero films",
+      "icon": "MdSportsKabaddi",
+      "createdAt": 1658763427742,
+      "updatedAt": 1658763427742
+    },
+    {
+      "id": "5dce7d68-0a0b-4590-84af-a213dc663d7b",
+      "name": "Comedy",
+      "slug": "comedy",
+      "description": "The main idea of comedies is to make the audience laugh. The main characters are involved in funny situations.",
+      "icon": "MdTheaterComedy",
+      "createdAt": 1658763478631,
+      "updatedAt": 1658763478631
+    },
+    {
+      "id": "6202f5a6-c473-4e31-a6c3-b52b252de9d0",
+      "name": "Animated",
+      "slug": "animated",
+      "description": "Instead of real actors on the screen, drawn images (nowadays computer generated ones) are used to tell the story. Real actors are used for the voices of the animated characters.",
+      "icon": "MdMovieFilter",
+      "createdAt": 1658763514548,
+      "updatedAt": 1658763514548
     }
   ],
   "actors": [
@@ -68,13 +104,22 @@
       "rating": 4,
       "genres": [
         {
+          "id": "31e97419-c3ee-4a91-b6aa-63616c09b313",
           "name": "Adventure",
-          "icon": "MdHiking",
-          "description": "A good adventure movie is the best way to escape from your usual life at least for a while and imagine yourself on board a spaceship or on a lonely raft in the endless ocean.",
           "slug": "adventure",
-          "id": "1",
-          "createdAt": null,
-          "updatedAt": null
+          "description": "A good adventure movie is the best way to escape from your usual life at least for a while and imagine yourself on board a spaceship or on a lonely raft in the endless ocean.",
+          "icon": "MdHiking",
+          "createdAt": 1658763325469,
+          "updatedAt": 1658763325469
+        },
+        {
+          "id": "a8d24ccf-79e3-4fd2-b18d-8c95b9671b40",
+          "name": "Action",
+          "slug": "action",
+          "description": "This type of movie generally involves a lot of action scenes including violence, like fighting or shoot-outs (with weapons), car chases and often lots of explosions. Some subgenres considered action movies include: disaster films, martial arts films, spy films and superhero films",
+          "icon": "MdSportsKabaddi",
+          "createdAt": 1658763427742,
+          "updatedAt": 1658763427742
         }
       ],
       "countOpened": 2,
@@ -117,22 +162,31 @@
       "rating": 0,
       "genres": [
         {
+          "id": "31e97419-c3ee-4a91-b6aa-63616c09b313",
           "name": "Adventure",
-          "icon": "MdHiking",
-          "description": "A good adventure movie is the best way to escape from your usual life at least for a while and imagine yourself on board a spaceship or on a lonely raft in the endless ocean.",
           "slug": "adventure",
-          "id": "1",
-          "createdAt": null,
-          "updatedAt": null
+          "description": "A good adventure movie is the best way to escape from your usual life at least for a while and imagine yourself on board a spaceship or on a lonely raft in the endless ocean.",
+          "icon": "MdHiking",
+          "createdAt": 1658763325469,
+          "updatedAt": 1658763325469
         },
         {
-          "id": "2",
-          "name": "Fantasy",
-          "slug": "fantasy",
-          "description": "A good adventure movie is the best way to escape from your usual life at least for a while and imagine yourself on board a spaceship or on a lonely raft in the endless ocean.",
-          "icon": "MdAutoFixHigh",
-          "createdAt": null,
-          "updatedAt": null
+          "name": "Horror",
+          "icon": "MdOfflineBolt",
+          "description": "The objective of a horror movie is to scare the viewer and if possible, make them scream (often done with a jump scare). Horror movies often feature a monster, some type of evil entity or a terrible/frightening situation.",
+          "slug": "horror",
+          "id": "643e9bcf-26dd-49a3-88fb-2b5c8670d567",
+          "createdAt": 1658763397893,
+          "updatedAt": 1658763397893
+        },
+        {
+          "id": "a8d24ccf-79e3-4fd2-b18d-8c95b9671b40",
+          "name": "Action",
+          "slug": "action",
+          "description": "This type of movie generally involves a lot of action scenes including violence, like fighting or shoot-outs (with weapons), car chases and often lots of explosions. Some subgenres considered action movies include: disaster films, martial arts films, spy films and superhero films",
+          "icon": "MdSportsKabaddi",
+          "createdAt": 1658763427742,
+          "updatedAt": 1658763427742
         }
       ],
       "countOpened": 0,
@@ -166,22 +220,22 @@
       "rating": 0,
       "genres": [
         {
+          "id": "31e97419-c3ee-4a91-b6aa-63616c09b313",
           "name": "Adventure",
-          "icon": "MdHiking",
-          "description": "A good adventure movie is the best way to escape from your usual life at least for a while and imagine yourself on board a spaceship or on a lonely raft in the endless ocean.",
           "slug": "adventure",
-          "id": "1",
-          "createdAt": null,
-          "updatedAt": null
+          "description": "A good adventure movie is the best way to escape from your usual life at least for a while and imagine yourself on board a spaceship or on a lonely raft in the endless ocean.",
+          "icon": "MdHiking",
+          "createdAt": 1658763325469,
+          "updatedAt": 1658763325469
         },
         {
-          "id": "2",
-          "name": "Fantasy",
-          "slug": "fantasy",
-          "description": "A good adventure movie is the best way to escape from your usual life at least for a while and imagine yourself on board a spaceship or on a lonely raft in the endless ocean.",
-          "icon": "MdAutoFixHigh",
-          "createdAt": null,
-          "updatedAt": null
+          "id": "a8d24ccf-79e3-4fd2-b18d-8c95b9671b40",
+          "name": "Action",
+          "slug": "action",
+          "description": "This type of movie generally involves a lot of action scenes including violence, like fighting or shoot-outs (with weapons), car chases and often lots of explosions. Some subgenres considered action movies include: disaster films, martial arts films, spy films and superhero films",
+          "icon": "MdSportsKabaddi",
+          "createdAt": 1658763427742,
+          "updatedAt": 1658763427742
         }
       ],
       "countOpened": 0,

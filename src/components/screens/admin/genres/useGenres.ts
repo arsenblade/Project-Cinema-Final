@@ -39,7 +39,6 @@ export const useGenres = () => {
 			},
 			onSuccess(data) {
         MyToast('Create was successful', true)
-        console.log(data)
         navigate(getAdminUrl(`genres/${data}`))
 			},
 		})
