@@ -13,5 +13,5 @@ export interface IContentList {
 }
 
 export interface IContent {
-  movie: IMovie
+  movie: IMovie | null
 }

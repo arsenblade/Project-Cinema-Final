@@ -12,7 +12,7 @@ const MoviesList:FC<IMovieList> = ({link, movies, title}) => {
       </div>
       {movies.map(movie => <MoviesItem key={movie.id} movie={movie} />)}
       <Link to={link} className={styles.button}>
-        All popular movies
+        All {title}
       </Link>
     </div>
   )

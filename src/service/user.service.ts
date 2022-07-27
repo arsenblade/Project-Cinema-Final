@@ -19,6 +19,20 @@ export const UserService = {
     return response
   },
 
+  async toggleFavorite(movieId: string, dataUser: IUser | undefined) {
+    if(dataUser) {
+      const isFavorite = dataUser.favorites.find(fMovie => fMovie === movieId)
+      if(!isFavorite) {
+        dataUser.favorites.push(movieId)
+        return await axiosPublic.put(getUsersUrl(dataUser.id), dataUser)
+      }
+      else {
+        dataUser.favorites = dataUser.favorites.filter(fMovie => fMovie !== movieId)
+        return await axiosPublic.put(getUsersUrl(dataUser.id), dataUser)
+      }
+    }
+  },
+
   async getProfile(email: string) {
     const response = await axiosPrivate.get<IUser[]>(getUsersUrl(''))
     const user = response.data.find(currentUser => currentUser.email === email)

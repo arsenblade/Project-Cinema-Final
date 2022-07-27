@@ -12,7 +12,6 @@ export const ActorService = {
         name_like: searchItem ? searchItem : ''
       }
     })
-
     return response.data
   },
 
@@ -43,15 +42,12 @@ export const ActorService = {
         slug_like: slug ? slug : ''
       }
     })
-    console.log(dataActor[0])
 
     const {data: dataMovies} = await axiosPublic.get<IMovie[]>(getMoviesUrl(''), {
       params: {
         q: dataActor[0].id ? dataActor[0].id : ''
       }
     })
-
-    console.log(dataMovies)
 
     return {
       dataActor: dataActor[0],

@@ -6,13 +6,12 @@ import { formatUrlUploads } from "../utils/formatUrlUploads";
 const uuid = require("uuid");
 
 export const MovieService = {
-  async getAll(searchItem?: string): Promise<IMovie[]> {
+  async getAll(searchItem?: string) {
     const response = await axiosPublic.get<IMovie[]>(getMoviesUrl(''), {
       params: {
         title_like: searchItem ? searchItem : ''
       }
     })
-
     return response.data
   },
 

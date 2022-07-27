@@ -1,10 +1,10 @@
-import { FC, Fragment } from 'react'
+import { FC, Fragment, memo } from 'react'
 import { Link } from 'react-router-dom'
 import { IContentList } from '../content.interface'
 
 import styles from './ContentList.module.scss'
 
-const ContentList:FC<IContentList> = ({name, links}) => {
+const ContentList:FC<IContentList> = memo(({name, links}) => {
   return (
     <div className={styles.list}>
       <div className={styles.name}>{name}</div>
@@ -18,6 +18,6 @@ const ContentList:FC<IContentList> = ({name, links}) => {
       </div>
     </div>
   )
-}
+})
 
 export default ContentList

@@ -1,14 +1,19 @@
 
-import { FC } from 'react'
+import { FC, memo } from 'react'
 import { getActorsUrl, getGenresUrl } from '../../../../constant/serverPath'
 import { useAuth } from '../../../../hooks/useAuth'
 import MaterialIcon from '../../../ui/MaterialIcon'
 import { IContent } from './content.interface'
 import styles from './Content.module.scss'
 import ContentList from './ContentList/ContentList'
+import FavoriteButton from './ContentList/FavoriteButton/FavoriteButtton'
 
-const Content:FC<IContent> = ({movie}) => {
+const Content:FC<IContent> = memo(({movie}) => {
   const {user} = useAuth()
+  if(!movie) {
+    return null
+  }
+  
   return (
     <div className={styles.content}>
       <h1>{movie.title}</h1>
@@ -33,8 +38,10 @@ const Content:FC<IContent> = ({movie}) => {
         <MaterialIcon name='MdStarRate' />
         <span>{movie.rating.toFixed(1)}</span>
       </div>
+      {user &&
+      <FavoriteButton movieId={movie.id}/>}
     </div>
   )
-}
+})
 
 export default Content

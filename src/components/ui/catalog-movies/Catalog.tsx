@@ -14,7 +14,6 @@ export interface ICatalog {
 }
 
 const Catalog:FC<ICatalog> = ({movies, title, description}) => {
-  //console.log(title)
   return (
     <>
       <h1 className={styles.heading}>{title}</h1>

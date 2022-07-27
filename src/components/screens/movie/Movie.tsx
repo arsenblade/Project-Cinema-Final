@@ -1,22 +1,21 @@
 import Banner from "../../ui/banner/Banner"
-import Catalog from "../../ui/catalog-movies/Catalog"
 import Gallery from "../../ui/gallery/Gallery"
 import Content from "./Content/Content"
 import styles from './Movie.module.scss'
 import { useMovie } from "./useMovie"
 import ReactPlayer from 'react-player'
-import { useState } from "react"
+import { memo, useCallback, useState } from "react"
 
 
-const Movie = () => {
+const Movie = memo(() => {
   const {dataMovie, isLoadingMovie, isLoadingMovies, similarMovies} = useMovie()
   const [isPlaying, setIsPlaying] =  useState(false)
-
+  const detail = useCallback(() => <Content movie={dataMovie || null} />, [dataMovie])
   return (
       <>
-        {dataMovie ? 
+        { !isLoadingMovies && dataMovie ? 
         <>
-          <Banner image={dataMovie.bigPoster} Detail={() => <Content movie={dataMovie} />} />
+          <Banner image={dataMovie.bigPoster} Detail={detail} />
           <div className={styles.containerPlayer}>
             <ReactPlayer 
               style={{margin: '0 auto'}} 
@@ -37,6 +36,6 @@ const Movie = () => {
       : null}
       </>
   )
-}
+})
 
 export default Movie

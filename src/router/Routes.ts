@@ -14,6 +14,7 @@ import UsersItemPage from "../pages/admin/users/usersItem"
 
 import AuthPage from "../pages/auth"
 import DiscoveryPage from "../pages/discovery"
+import FavoritesPage from "../pages/favorites"
 import FreshPage from "../pages/fresh"
 import GenrePage from "../pages/genre"
 import MoviePage from "../pages/movie"
@@ -64,6 +65,10 @@ export const authRoutes = [
   {
     path: routesPath.PROFILE_ROUTE,
     Component: ProfilePage
+  },
+  {
+    path: routesPath.FAVORITES_ROUTE,
+    Component: FavoritesPage
   },
 ]
 

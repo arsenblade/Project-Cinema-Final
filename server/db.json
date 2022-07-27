@@ -5,7 +5,11 @@
       "isAdmin": true,
       "password": "123456",
       "id": "1",
-      "favorites": [],
+      "favorites": [
+        "1",
+        "1e1ddc5f-bed7-4e3e-8814-79540e50e84f",
+        "727011ab-4886-4f29-9d8d-10423cb7edde"
+      ],
       "createdAt": "1658507384507",
       "updatedAt": "1658684482526"
     },

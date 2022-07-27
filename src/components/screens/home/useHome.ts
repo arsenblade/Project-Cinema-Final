@@ -62,5 +62,5 @@ export const useHome = () => {
     bestActors,
     isLoadingMovie,
     isLoadingActor
-  }), [isLoadingMovie])
+  }), [isLoadingActor, isLoadingMovie])
 }

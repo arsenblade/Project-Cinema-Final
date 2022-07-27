@@ -1,4 +1,4 @@
-import { FC } from 'react'
+import { FC, useCallback } from 'react'
 import SkeletonLoader from '../../SkeletonLoader'
 import { IAdminTable } from './admin-table.interface'
 import AdminTableHeader from './AdminTableHeader'
@@ -6,7 +6,7 @@ import AdminTableItem from './AdminTableItem'
 import styles from './AdminTable.module.scss'
 
 const AdminTable:FC<IAdminTable> = ({headerItems,isLoading,removeHandler,tableItems}) => {
-  
+
   return (
     <div>
       <AdminTableHeader headerItems={headerItems}/>
