@@ -42,7 +42,6 @@ export const useHome = () => {
   const bestActors: IGalleryItem[] = dataActor ? dataActor.slice(0, 7).map(a => {
 
     const countMovies = dataMovie ? dataMovie.filter(m => m.actors.some((actor) => actor.id === a.id)) : []
-    console.log(countMovies)
 
     return {
       name: a.name,

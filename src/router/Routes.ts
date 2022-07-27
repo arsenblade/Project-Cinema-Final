@@ -1,6 +1,7 @@
 import { routesPath } from "../constant/routesPath"
 import Index from "../pages"
 import Page404 from "../pages/404"
+import ActorPage from "../pages/actor"
 import AdminActorsPage from "../pages/admin/actors/actors"
 import ActorsItemPage from "../pages/admin/actors/actorsItem"
 import AdminIndexPage from "../pages/admin/adminIndexPage"
@@ -15,6 +16,7 @@ import AuthPage from "../pages/auth"
 import DiscoveryPage from "../pages/discovery"
 import FreshPage from "../pages/fresh"
 import GenrePage from "../pages/genre"
+import MoviePage from "../pages/movie"
 import ProfilePage from "../pages/profile"
 import TrendingPage from "../pages/trending"
 
@@ -47,6 +49,14 @@ export const publicRoutes = [
   {
     path: routesPath.DISCOVERY_ITEM_ROUTE,
     Component: GenrePage
+  },
+  {
+    path: routesPath.ACTORS_ITEM_ROUTE,
+    Component: ActorPage
+  },
+  {
+    path: routesPath.MOVIE_ITEM_ROUTE,
+    Component: MoviePage
   },
 ]
 

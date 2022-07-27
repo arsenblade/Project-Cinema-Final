@@ -1,6 +1,6 @@
 import { axiosPrivate, axiosPublic } from "../api/interseptors"
-import { getActorsUrl } from "../constant/serverPath"
-import { IActor } from "../types/movies/movie.types"
+import { getActorsUrl, getMoviesUrl } from "../constant/serverPath"
+import { IActor, IMovie } from "../types/movies/movie.types"
 import { formatUrlUploads } from "../utils/formatUrlUploads";
 const uuid = require("uuid");
 
@@ -35,6 +35,28 @@ export const ActorService = {
     await axiosPrivate.post<IActor>(getActorsUrl(''), defaultActor)
 
     return defaultActor.id
+  },
+
+  async getBySlug(slug: string) {
+    const {data: dataActor} = await axiosPublic.get<IActor[]>(getActorsUrl(''), {
+      params: {
+        slug_like: slug ? slug : ''
+      }
+    })
+    console.log(dataActor[0])
+
+    const {data: dataMovies} = await axiosPublic.get<IMovie[]>(getMoviesUrl(''), {
+      params: {
+        q: dataActor[0].id ? dataActor[0].id : ''
+      }
+    })
+
+    console.log(dataMovies)
+
+    return {
+      dataActor: dataActor[0],
+      dataMovies
+    }
   },
 
   async getById(id: string) {

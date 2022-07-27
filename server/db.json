@@ -77,22 +77,22 @@
   ],
   "actors": [
     {
+      "id": "b573583a-13b4-478a-a209-b52e7c58df7b",
       "name": "Tom Holland",
       "photo": "/uploads/actors/tom-holland.jpg",
-      "slug": "tom holland",
-      "id": "1",
+      "slug": "tom-holland",
       "countMovies": 0,
-      "createdAt": null,
-      "updatedAt": null
+      "createdAt": 1658783761513,
+      "updatedAt": 1658783761513
     },
     {
-      "id": "2",
+      "id": "cb6777cb-f1fa-4e66-af8b-71915484414c",
       "name": "Will Smith",
       "photo": "/uploads/actors/will-smith.jpg",
       "slug": "will-smith",
       "countMovies": 0,
-      "createdAt": null,
-      "updatedAt": null
+      "createdAt": 1658783783545,
+      "updatedAt": 1658783783545
     }
   ],
   "movies": [
@@ -103,15 +103,6 @@
       "title": "Ip Man 2",
       "rating": 4,
       "genres": [
-        {
-          "id": "31e97419-c3ee-4a91-b6aa-63616c09b313",
-          "name": "Adventure",
-          "slug": "adventure",
-          "description": "A good adventure movie is the best way to escape from your usual life at least for a while and imagine yourself on board a spaceship or on a lonely raft in the endless ocean.",
-          "icon": "MdHiking",
-          "createdAt": 1658763325469,
-          "updatedAt": 1658763325469
-        },
         {
           "id": "a8d24ccf-79e3-4fd2-b18d-8c95b9671b40",
           "name": "Action",
@@ -126,22 +117,22 @@
       "videoUrl": "/uploads/cinema/ip-man-video.mp4",
       "actors": [
         {
+          "id": "b573583a-13b4-478a-a209-b52e7c58df7b",
           "name": "Tom Holland",
           "photo": "/uploads/actors/tom-holland.jpg",
-          "slug": "tom holland",
-          "id": "1",
+          "slug": "tom-holland",
           "countMovies": 0,
-          "createdAt": null,
-          "updatedAt": null
+          "createdAt": 1658783761513,
+          "updatedAt": 1658783761513
         },
         {
-          "id": "2",
+          "id": "cb6777cb-f1fa-4e66-af8b-71915484414c",
           "name": "Will Smith",
           "photo": "/uploads/actors/will-smith.jpg",
           "slug": "will-smith",
           "countMovies": 0,
-          "createdAt": null,
-          "updatedAt": null
+          "createdAt": 1658783783545,
+          "updatedAt": 1658783783545
         }
       ],
       "slug": "ip-man-2",
@@ -193,13 +184,13 @@
       "videoUrl": "/uploads/cinema/ip-man.mp4",
       "actors": [
         {
-          "id": "2",
-          "name": "Will Smith",
-          "photo": "/uploads/actors/will-smith.jpg",
-          "slug": "will-smith",
+          "id": "b573583a-13b4-478a-a209-b52e7c58df7b",
+          "name": "Tom Holland",
+          "photo": "/uploads/actors/tom-holland.jpg",
+          "slug": "tom-holland",
           "countMovies": 0,
-          "createdAt": null,
-          "updatedAt": null
+          "createdAt": 1658783761513,
+          "updatedAt": 1658783761513
         }
       ],
       "slug": "mad-max",
@@ -242,13 +233,13 @@
       "videoUrl": "/uploads/cinema/avatar-video.mp4",
       "actors": [
         {
-          "name": "Tom Holland",
-          "photo": "/uploads/actors/tom-holland.jpg",
-          "slug": "tom holland",
-          "id": "1",
+          "id": "cb6777cb-f1fa-4e66-af8b-71915484414c",
+          "name": "Will Smith",
+          "photo": "/uploads/actors/will-smith.jpg",
+          "slug": "will-smith",
           "countMovies": 0,
-          "createdAt": null,
-          "updatedAt": null
+          "createdAt": 1658783783545,
+          "updatedAt": 1658783783545
         }
       ],
       "slug": "avatar",

@@ -68,6 +68,16 @@ export const MovieService = {
     return await axiosPrivate.get<IMovie>(getMoviesUrl(id))
   },
 
+  async getBySlug(slug: string) {
+    const {data} = await axiosPrivate.get<IMovie[]>(getMoviesUrl(''), {
+      params: {
+        slug_like: slug ? slug : ''
+      }
+    })
+    return data[0]
+  },
+
+
   async getByIdMovieEditInput(id: string) {
     const {data} = await axiosPrivate.get<IMovie>(getMoviesUrl(id))
     const poster = formatUrlUploads(data.poster)
