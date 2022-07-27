@@ -5,6 +5,7 @@ import { getAdminUrl } from "../../../../constant/routesPath"
 import { useDebounce } from "../../../../hooks/useDebounce"
 import { MovieService } from "../../../../service/movie.service"
 import { getGenresList } from "../../../../utils/genreUtils"
+import { ratingCalculation } from "../../../../utils/ratingCalculation"
 import { ITableItem } from "../../../ui/admin-table/AdminTable/admin-table.interface"
 import { MyToast } from "../../../ui/toast/MyToast"
 
@@ -17,7 +18,7 @@ export const useMovies = () => {
     select: (data) => data.map((movie):ITableItem => ({
       id: movie.id,
       editUrl: getAdminUrl(`movies/${movie.id}`),
-      items: [movie.title, getGenresList(movie.genres), String(movie.rating)]
+      items: [movie.title, getGenresList(movie.genres), String(ratingCalculation(movie.rating))]
     })),
     onError: () => {
       MyToast('Error movie list', false)

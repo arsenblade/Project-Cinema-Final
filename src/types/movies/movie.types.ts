@@ -33,6 +33,11 @@ export interface IMovie {
   countOpened: number,
   createdAt: number,
   videoUrl: string,
-  rating: number,
+  rating: IRating[],
   slug: string
+}
+
+export interface IRating {
+  idUser: string,
+  value: number,
 }

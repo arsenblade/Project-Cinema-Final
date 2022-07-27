@@ -5,6 +5,7 @@ import styles from './Movie.module.scss'
 import { useMovie } from "./useMovie"
 import ReactPlayer from 'react-player'
 import { memo, useCallback, useState } from "react"
+import MovieRate from "./MovieRate/MovieRate"
 
 
 const Movie = memo(() => {
@@ -32,6 +33,8 @@ const Movie = memo(() => {
             <h2 className={styles.heading}>Similar</h2>
             <Gallery items={similarMovies} />
           </div>
+
+          <MovieRate movieId={dataMovie.id} slug={dataMovie.slug} />
         </>
       : null}
       </>

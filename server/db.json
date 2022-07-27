@@ -105,7 +105,7 @@
       "poster": "/uploads/cinema/ip-man-poster.jpg",
       "bigPoster": "/uploads/cinema/ip-man-big-poster.jpg",
       "title": "Ip Man 2",
-      "rating": 4,
+      "rating": [],
       "genres": [
         {
           "id": "a8d24ccf-79e3-4fd2-b18d-8c95b9671b40",
@@ -154,7 +154,16 @@
       "poster": "/uploads/cinema/mad-max-poster.jpg",
       "bigPoster": "/uploads/cinema/mad-max-big-poster.jpg",
       "title": "Mad Max",
-      "rating": 0,
+      "rating": [
+        {
+          "idUser": "1",
+          "value": 4
+        },
+        {
+          "idUser": "3f732c63-0ff4-4a2c-9745-10a6dbf45698",
+          "value": 5
+        }
+      ],
       "genres": [
         {
           "id": "31e97419-c3ee-4a91-b6aa-63616c09b313",
@@ -212,7 +221,7 @@
       "poster": "/uploads/cinema/avatar-poster.jpg",
       "bigPoster": "/uploads/cinema/avatar-big-poster.jpg",
       "title": "Avatar",
-      "rating": 0,
+      "rating": [],
       "genres": [
         {
           "id": "31e97419-c3ee-4a91-b6aa-63616c09b313",

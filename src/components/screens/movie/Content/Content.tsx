@@ -2,6 +2,7 @@
 import { FC, memo } from 'react'
 import { getActorsUrl, getGenresUrl } from '../../../../constant/serverPath'
 import { useAuth } from '../../../../hooks/useAuth'
+import { ratingCalculation } from '../../../../utils/ratingCalculation'
 import MaterialIcon from '../../../ui/MaterialIcon'
 import { IContent } from './content.interface'
 import styles from './Content.module.scss'
@@ -36,7 +37,7 @@ const Content:FC<IContent> = memo(({movie}) => {
 
       <div className={styles.rating}>
         <MaterialIcon name='MdStarRate' />
-        <span>{movie.rating.toFixed(1)}</span>
+        <span>{ratingCalculation(movie.rating).toFixed(1)}</span>
       </div>
       {user &&
       <FavoriteButton movieId={movie.id}/>}

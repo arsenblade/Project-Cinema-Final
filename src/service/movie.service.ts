@@ -26,7 +26,7 @@ export const MovieService = {
       poster: "",
       bigPoster: "",
       title: "",
-      rating: 0,
+      rating: [],
       genres: [],
       countOpened: 0,
       videoUrl: "",
@@ -47,8 +47,12 @@ export const MovieService = {
     return defaultMovies.id
   },
 
+  async updateRate(data: IMovie) {
+    return await axiosPrivate.put<IMovie>(getMoviesUrl(data.id), data)
+  },
+
   
-  async update(id: string, dataField: IMovieEditInput, dataMovie: IMovie | null, dataGenres: IGenre[] | null, dataActors: IActor[] | null) {
+  async update(id: string, dataField: IMovieEditInput, dataMovie: IMovie | null, dataGenres?: IGenre[] | null, dataActors?: IActor[] | null) {
     if(dataMovie) {
       dataMovie.genres = dataGenres ? dataGenres?.filter(genre => dataField.genres.some(g => g === genre.id)) : []
       dataMovie.actors = dataActors ? dataActors?.filter(actor => dataField.actors.some(a => a === actor.id)) : []

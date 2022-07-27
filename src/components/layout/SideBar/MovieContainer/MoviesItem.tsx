@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { getGenresUrl, getMoviesUrl } from '../../../../constant/serverPath'
 import { IMovie } from '../../../../types/movies/movie.types'
 import { getGenresListEach } from '../../../../utils/genreUtils'
+import { ratingCalculation } from '../../../../utils/ratingCalculation'
 import MaterialIcon from '../../../ui/MaterialIcon'
 import styles from './MoviesList.module.scss'
 
@@ -27,7 +28,7 @@ const MoviesItem:FC<MovieItemProps> = ({movie}) => {
         </div>
         <div className={styles.rating}>
           <MaterialIcon name='MdStarRate' />
-          <span>{movie.rating.toFixed(1)}</span>
+          <span>{ratingCalculation(movie.rating).toFixed(1)}</span>
         </div>
       </div>
     </div>
