@@ -72,7 +72,7 @@ export const MovieService = {
   },
 
   async getBySlug(slug: string) {
-    const {data} = await axiosPrivate.get<IMovie[]>(getMoviesUrl(''), {
+    const {data} = await axiosPublic.get<IMovie[]>(getMoviesUrl(''), {
       params: {
         slug_like: slug ? slug : ''
       }

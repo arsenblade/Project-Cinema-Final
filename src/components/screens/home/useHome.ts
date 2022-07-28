@@ -39,7 +39,7 @@ export const useHome = () => {
   })).sort((firstMovie, secondMovie) => secondMovie.countOpened - firstMovie.countOpened) : []
 
 
-  const bestActors: IGalleryItem[] = dataActor ? dataActor.slice(0, 7).map(a => {
+  const bestActors: IGalleryItem[] = dataActor ? dataActor.map(a => {
 
     const countMovies = dataMovie ? dataMovie.filter(m => m.actors.some((actor) => actor.id === a.id)) : []
 
@@ -53,7 +53,7 @@ export const useHome = () => {
         subTitle: `+${countMovies.length} movies`
       }
     }
-  }).sort((firstActor, secondActor) => secondActor.countMovies - firstActor.countMovies)
+  }).sort((firstActor, secondActor) => secondActor.countMovies - firstActor.countMovies).slice(0, 7)
   : []
 
   return useMemo(() => ({

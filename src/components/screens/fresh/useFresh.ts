@@ -12,7 +12,7 @@ export const useFresh = () => {
     }
   })
 
-  const dataMovie = data ? data.sort((firstMovie, secondMovie) => secondMovie.createdAt - firstMovie.createdAt) : []
+  const dataMovie = data ? data.sort((firstMovie, secondMovie) => secondMovie.parameters.year - firstMovie.parameters.year) : []
 
   return useMemo(() => ({
     isLoading,

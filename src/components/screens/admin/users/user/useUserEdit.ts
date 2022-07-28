@@ -46,5 +46,6 @@ export const useUserEdit = (setValue:UseFormSetValue<IUser>) => {
       isLoading,
       mutateAsync,
       onSubmit,
+      data
     }), [isLoading, mutateAsync])
 }

@@ -8,6 +8,16 @@ const uuid = require("uuid");
 
 export const AuthService = {
   async register(email: string, password: string) {
+    const {data} = await axiosPublic.get<IUser[]>(getAuthUrl('users'), {
+      params: {
+        email_like: email
+      }
+    })
+
+    if(data.length > 0) {
+      throw new Error('There is already a user registered');
+    }
+ 
     const defaultUSer = {
       id: uuid.v4(),
       email: email,

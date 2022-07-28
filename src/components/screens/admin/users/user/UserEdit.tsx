@@ -7,13 +7,16 @@ import styles from './UserEdit.module.scss'
 import { useUserEdit } from './useUserEdit'
 import { IUser } from '../../../../../types/user.types'
 import AuthFields from '../../../auth/AuthFields'
+import { useAuth } from '../../../../../hooks/useAuth'
 
 
 const UserEdit = () => {
   const {handleSubmit, register, formState, setValue, control} = useForm<IUser>({
     mode: 'onChange'
   })
-  const {isLoading, onSubmit} = useUserEdit(setValue)
+  const {isLoading, onSubmit, data} = useUserEdit(setValue)
+  const {user} = useAuth()
+
 
   return (
     <div>
@@ -27,18 +30,21 @@ const UserEdit = () => {
         :
           <>
             <AuthFields register={register} formState={formState}  />
-            <Controller
-            control={control} 
-            name='isAdmin' 
-            render={({field}) => (
-              <button className={styles.button} onClick={(e) => {
-                e.preventDefault()
-                field.onChange(!field.value)
-              }}>
-                {field.value ? 'Make it regular user' : 'Make it admin'}
-              </button>
-            )}
-            ></Controller>
+            {data?.data.id !== user?.id ?             
+              <Controller
+                control={control} 
+                name='isAdmin' 
+                render={({field}) => (
+                  <button className={styles.button} onClick={(e) => {
+                    e.preventDefault()
+                    field.onChange(!field.value)
+                  }}>
+                    {field.value ? 'Make it regular user' : 'Make it admin'}
+                  </button>
+                )}
+              ></Controller> 
+            : 
+              null}
 
             <Button>Update</Button>
           </>

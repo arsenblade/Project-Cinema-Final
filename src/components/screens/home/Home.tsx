@@ -16,7 +16,7 @@ const Home:FC = () => {
     <div>
       <h1 className={styles.header}>Watch movies online</h1>
       {isLoadingMovie ?
-        <SkeletonLoader count={1} className={styles.loader} />
+        <SkeletonLoader count={2} className={styles.loader} />
       :
         <>
           {slides.length && <Slider slides={slides} />}
@@ -28,7 +28,7 @@ const Home:FC = () => {
       }
 
       {isLoadingActor ?
-        <SkeletonLoader count={1} />
+        null
       :
         <div className={styles.containerBestActors}>
           <h1 className={styles.header}>Best actors</h1>

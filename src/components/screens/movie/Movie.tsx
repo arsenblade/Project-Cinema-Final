@@ -14,7 +14,7 @@ import { useCountOpened } from "./useCountOpened"
 
 const Movie = memo(() => {
   const params = useParams()
-  const {dataMovie, isLoadingMovie, isLoadingMovies, similarMovies} = useMovie()
+  const {dataMovie, isLoadingMovies, similarMovies} = useMovie()
   const [isPlaying, setIsPlaying] =  useState(false)
   const {user} = useAuth()
   const detail = useCallback(() => <Content movie={dataMovie || null} />, [dataMovie])
