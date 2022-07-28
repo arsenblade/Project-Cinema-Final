@@ -14,9 +14,6 @@ export const useMovie = () => {
   MovieService.getAll(), {
     onError: () => {
       MyToast('Error movie list', false)
-    },
-    onSuccess: () => {
-      console.log('Movie response')
     }
   })
 

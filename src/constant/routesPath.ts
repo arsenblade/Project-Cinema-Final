@@ -22,5 +22,6 @@ export enum routesPath {
   ERROR_404 = '*'
 }
 
+export const getHomeUrl = (string: string) => `/${string}`
 export const getAdminHomeUrl = () => `/manage`
 export const getAdminUrl = (string: string) => `/manage/${string}`

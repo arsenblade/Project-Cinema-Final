@@ -17,7 +17,10 @@
       "email": "testUSER1@test.ru",
       "password": "123456",
       "isAdmin": false,
-      "favorites": [],
+      "favorites": [
+        "727011ab-4886-4f29-9d8d-10423cb7edde",
+        "1"
+      ],
       "id": "3f732c63-0ff4-4a2c-9745-10a6dbf45698",
       "createdAt": "1658507384507",
       "updatedAt": "1658507384507"
@@ -38,7 +41,7 @@
       "name": "Fantasy",
       "slug": "fantasy",
       "description": "Situations, places and/or events that don’t comply with natural laws or settings. They often involve some form of magic or supernatural elements. There are sometimes magical creatures or beings too.",
-      "icon": "MdHiking",
+      "icon": "MdAutoFixHigh",
       "createdAt": 1658763344042,
       "updatedAt": 1658763344042
     },
@@ -105,7 +108,12 @@
       "poster": "/uploads/cinema/ip-man-poster.jpg",
       "bigPoster": "/uploads/cinema/ip-man-big-poster.jpg",
       "title": "Ip Man 2",
-      "rating": [],
+      "rating": [
+        {
+          "idUser": "3f732c63-0ff4-4a2c-9745-10a6dbf45698",
+          "value": 4
+        }
+      ],
       "genres": [
         {
           "id": "a8d24ccf-79e3-4fd2-b18d-8c95b9671b40",
@@ -221,7 +229,12 @@
       "poster": "/uploads/cinema/avatar-poster.jpg",
       "bigPoster": "/uploads/cinema/avatar-big-poster.jpg",
       "title": "Avatar",
-      "rating": [],
+      "rating": [
+        {
+          "idUser": "3f732c63-0ff4-4a2c-9745-10a6dbf45698",
+          "value": 5
+        }
+      ],
       "genres": [
         {
           "id": "31e97419-c3ee-4a91-b6aa-63616c09b313",
