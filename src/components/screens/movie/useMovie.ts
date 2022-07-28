@@ -1,4 +1,4 @@
-import { useMemo } from "react"
+import { useEffect, useMemo } from "react"
 import { useQuery } from "react-query"
 import { useParams } from "react-router"
 import { getMoviesUrl } from "../../../constant/serverPath"
@@ -16,6 +16,7 @@ export const useMovie = () => {
       MyToast('Error movie list', false)
     }
   })
+
 
   const {data: dataMovie, isLoading: isLoadingMovie} = useQuery(['movie by slug', slug], () => 
   MovieService.getBySlug(slug), {

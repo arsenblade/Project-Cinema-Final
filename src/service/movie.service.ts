@@ -80,6 +80,20 @@ export const MovieService = {
     return data[0]
   },
 
+  async updateCountOpened(slug: string| null) {
+    const {data} = await axiosPublic.get<IMovie[]>(getMoviesUrl(''), {
+      params: {
+        slug_like: slug ? slug : ''
+      }
+    })
+    console.log(data[0].countOpened)
+    if(data.length === 1) {
+      data[0].countOpened = data[0].countOpened + 1
+      console.log(data[0].countOpened)
+      return await axiosPublic.put<IMovie>(getMoviesUrl(data[0].id), data[0])
+    }
+  },
+
 
   async getByIdMovieEditInput(id: string) {
     const {data} = await axiosPrivate.get<IMovie>(getMoviesUrl(id))

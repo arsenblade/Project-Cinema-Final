@@ -8,13 +8,19 @@ import { memo, useCallback, useState } from "react"
 import MovieRate from "./MovieRate/MovieRate"
 import { useAuth } from "../../../hooks/useAuth"
 import MovieNoAuth from "./MovieNoAuth/MovieNoAuth"
+import { useParams } from "react-router"
+import { useCountOpened } from "./useCountOpened"
 
 
 const Movie = memo(() => {
+  const params = useParams()
   const {dataMovie, isLoadingMovie, isLoadingMovies, similarMovies} = useMovie()
   const [isPlaying, setIsPlaying] =  useState(false)
   const {user} = useAuth()
   const detail = useCallback(() => <Content movie={dataMovie || null} />, [dataMovie])
+  useCountOpened(params.slug)
+
+  
   return (
       <>
         { !isLoadingMovies && dataMovie ? 
