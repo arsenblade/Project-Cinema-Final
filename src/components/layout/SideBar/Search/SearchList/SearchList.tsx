@@ -13,7 +13,7 @@ const SearchList:FC<SearchListProps> = ({movies}) => {
     <div className={styles.searchList}>
       {movies.length ? movies.map(movie => 
       <Link key={movie.id} to={getMoviesUrl(movie.slug)}>
-        <img src={movie.poster}  alt="Film" width={50} height={50} draggable={false}/>
+        <img src={movie.poster}  alt="Film" width={40} height={60} draggable={false}/>
         <span>{movie.title}</span>
       </Link>) : 
       <div className={styles.noMovies}> 
