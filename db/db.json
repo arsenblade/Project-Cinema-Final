@@ -1,0 +1,911 @@
+{
+  "users": [
+    {
+      "email": "testADMIN@test.ru",
+      "isAdmin": true,
+      "password": "123456",
+      "id": "1",
+      "favorites": [
+        "1",
+        "1e1ddc5f-bed7-4e3e-8814-79540e50e84f",
+        "727011ab-4886-4f29-9d8d-10423cb7edde"
+      ],
+      "createdAt": "1658507384507",
+      "updatedAt": "1658684482526"
+    },
+    {
+      "email": "testUSER1@test.ru",
+      "password": "123456",
+      "isAdmin": false,
+      "favorites": [
+        "727011ab-4886-4f29-9d8d-10423cb7edde",
+        "1"
+      ],
+      "id": "3f732c63-0ff4-4a2c-9745-10a6dbf45698",
+      "createdAt": "1658507384507",
+      "updatedAt": "1658507384507"
+    }
+  ],
+  "genres": [
+    {
+      "id": "31e97419-c3ee-4a91-b6aa-63616c09b313",
+      "name": "Adventure",
+      "slug": "adventure",
+      "description": "A good adventure movie is the best way to escape from your usual life at least for a while and imagine yourself on board a spaceship or on a lonely raft in the endless ocean.",
+      "icon": "MdHiking",
+      "createdAt": 1658763325469,
+      "updatedAt": 1658763325469
+    },
+    {
+      "id": "7b9ae89b-a331-497b-9b64-fed0f36a7f06",
+      "name": "Fantasy",
+      "slug": "fantasy",
+      "description": "Situations, places and/or events that don’t comply with natural laws or settings. They often involve some form of magic or supernatural elements. There are sometimes magical creatures or beings too.",
+      "icon": "MdAutoFixHigh",
+      "createdAt": 1658763344042,
+      "updatedAt": 1658763344042
+    },
+    {
+      "name": "Horror",
+      "icon": "MdOfflineBolt",
+      "description": "The objective of a horror movie is to scare the viewer and if possible, make them scream (often done with a jump scare). Horror movies often feature a monster, some type of evil entity or a terrible/frightening situation.",
+      "slug": "horror",
+      "id": "643e9bcf-26dd-49a3-88fb-2b5c8670d567",
+      "createdAt": 1658763397893,
+      "updatedAt": 1658763397893
+    },
+    {
+      "id": "a8d24ccf-79e3-4fd2-b18d-8c95b9671b40",
+      "name": "Action",
+      "slug": "action",
+      "description": "This type of movie generally involves a lot of action scenes including violence, like fighting or shoot-outs (with weapons), car chases and often lots of explosions. Some subgenres considered action movies include: disaster films, martial arts films, spy films and superhero films",
+      "icon": "MdSportsKabaddi",
+      "createdAt": 1658763427742,
+      "updatedAt": 1658763427742
+    },
+    {
+      "id": "5dce7d68-0a0b-4590-84af-a213dc663d7b",
+      "name": "Comedy",
+      "slug": "comedy",
+      "description": "The main idea of comedies is to make the audience laugh. The main characters are involved in funny situations.",
+      "icon": "MdTheaterComedy",
+      "createdAt": 1658763478631,
+      "updatedAt": 1658763478631
+    },
+    {
+      "id": "6202f5a6-c473-4e31-a6c3-b52b252de9d0",
+      "name": "Animated",
+      "slug": "animated",
+      "description": "Instead of real actors on the screen, drawn images (nowadays computer generated ones) are used to tell the story. Real actors are used for the voices of the animated characters.",
+      "icon": "MdMovieFilter",
+      "createdAt": 1658763514548,
+      "updatedAt": 1658763514548
+    }
+  ],
+  "actors": [
+    {
+      "id": "b573583a-13b4-478a-a209-b52e7c58df7b",
+      "name": "Tom Holland",
+      "photo": "/uploads/actors/tom-holland.jpg",
+      "slug": "tom-holland",
+      "countMovies": 0,
+      "createdAt": 1658783761513,
+      "updatedAt": 1658783761513
+    },
+    {
+      "id": "cb6777cb-f1fa-4e66-af8b-71915484414c",
+      "name": "Will Smith",
+      "photo": "/uploads/actors/will-smith.jpg",
+      "slug": "will-smith",
+      "countMovies": 0,
+      "createdAt": 1658783783545,
+      "updatedAt": 1658783783545
+    },
+    {
+      "id": "03a4df87-5f9a-4471-bfa3-2a1057ac64d6",
+      "name": "Charlize Theron",
+      "photo": "/uploads/actors/charlize-theron.jpg",
+      "slug": "charlize-theron",
+      "countMovies": 0,
+      "createdAt": 1659014869559,
+      "updatedAt": 1659014869559
+    },
+    {
+      "id": "bd2eeda9-61b1-4853-823f-9f1333e5a8ba",
+      "name": "Donnie Yen",
+      "photo": "/uploads/actors/donnie-yen.jpg",
+      "slug": "donnie-yen",
+      "countMovies": 0,
+      "createdAt": 1659014917219,
+      "updatedAt": 1659014917219
+    },
+    {
+      "id": "b77204ab-e2e9-43a6-bf93-2aadf3c36749",
+      "name": "Keanu Reeves",
+      "photo": "/uploads/actors/keanu-reeves.jpg",
+      "slug": "keanu-reeves",
+      "countMovies": 0,
+      "createdAt": 1659014937024,
+      "updatedAt": 1659014937024
+    },
+    {
+      "name": "Laurence Fishburne",
+      "photo": "/uploads/actors/laurence-fishburne.jpg",
+      "slug": "laurence-fishburne",
+      "id": "6792b15f-60b6-4b5d-b6c3-096b6fb1599f",
+      "countMovies": 0,
+      "createdAt": 1659014970644,
+      "updatedAt": 1659014970644
+    },
+    {
+      "id": "f986147d-3f39-41fb-995f-a8bdfaf440bf",
+      "name": "Martin-Freeman",
+      "photo": "/uploads/actors/martin-freeman.jpg",
+      "slug": "martin-freeman",
+      "countMovies": 0,
+      "createdAt": 1659014989640,
+      "updatedAt": 1659014989640
+    },
+    {
+      "id": "42d9f2e0-e716-433b-9596-cf337487f906",
+      "name": "Sam Worthington",
+      "photo": "/uploads/actors/sam-worthington.jpg",
+      "slug": "sam-worthington",
+      "countMovies": 0,
+      "createdAt": 1659015066511,
+      "updatedAt": 1659015066511
+    },
+    {
+      "id": "110c3bdd-fcd7-4ef6-a87b-07722ce86c32",
+      "name": "Simu Liu",
+      "photo": "/uploads/actors/simu-liu.jpg",
+      "slug": "simu-liu",
+      "countMovies": 0,
+      "createdAt": 1659015082777,
+      "updatedAt": 1659015082777
+    },
+    {
+      "id": "6026c42d-cc70-44a8-92c8-caea27b1120a",
+      "name": "Stephanie Beatriz",
+      "photo": "/uploads/actors/stephanie-beatriz.jpg",
+      "slug": "stephanie-beatriz",
+      "countMovies": 0,
+      "createdAt": 1659015104696,
+      "updatedAt": 1659015104696
+    },
+    {
+      "id": "efe5722c-6342-4f25-bd66-b5d41cc16f95",
+      "name": "Tom Hardy",
+      "photo": "/uploads/actors/tom-hardy.jpg",
+      "slug": "tom-hardy",
+      "countMovies": 0,
+      "createdAt": 1659015129298,
+      "updatedAt": 1659015129298
+    }
+  ],
+  "movies": [
+    {
+      "id": "1",
+      "poster": "/uploads/cinema/ip-man-poster.jpg",
+      "bigPoster": "/uploads/cinema/ip-man-big-poster.jpg",
+      "title": "Ip Man 2",
+      "rating": [
+        {
+          "idUser": "3f732c63-0ff4-4a2c-9745-10a6dbf45698",
+          "value": 4
+        },
+        {
+          "idUser": "1",
+          "value": 3
+        }
+      ],
+      "genres": [
+        {
+          "id": "a8d24ccf-79e3-4fd2-b18d-8c95b9671b40",
+          "name": "Action",
+          "slug": "action",
+          "description": "This type of movie generally involves a lot of action scenes including violence, like fighting or shoot-outs (with weapons), car chases and often lots of explosions. Some subgenres considered action movies include: disaster films, martial arts films, spy films and superhero films",
+          "icon": "MdSportsKabaddi",
+          "createdAt": 1658763427742,
+          "updatedAt": 1658763427742
+        }
+      ],
+      "countOpened": 9,
+      "videoUrl": "/uploads/cinema/ip-man-video.mp4",
+      "actors": [
+        {
+          "id": "bd2eeda9-61b1-4853-823f-9f1333e5a8ba",
+          "name": "Donnie Yen",
+          "photo": "/uploads/actors/donnie-yen.jpg",
+          "slug": "donnie-yen",
+          "countMovies": 0,
+          "createdAt": 1659014917219,
+          "updatedAt": 1659014917219
+        }
+      ],
+      "slug": "ip-man-2",
+      "isSendTelegram": false,
+      "createdAt": null,
+      "updatedAt": null,
+      "parameters": {
+        "year": "2008",
+        "duration": "102",
+        "country": "Hong Kong, China"
+      }
+    },
+    {
+      "id": "727011ab-4886-4f29-9d8d-10423cb7edde",
+      "poster": "/uploads/cinema/mad-max-poster.jpg",
+      "bigPoster": "/uploads/cinema/mad-max-big-poster.jpg",
+      "title": "Mad Max",
+      "rating": [
+        {
+          "idUser": "1",
+          "value": 4
+        },
+        {
+          "idUser": "3f732c63-0ff4-4a2c-9745-10a6dbf45698",
+          "value": 5
+        }
+      ],
+      "genres": [
+        {
+          "id": "31e97419-c3ee-4a91-b6aa-63616c09b313",
+          "name": "Adventure",
+          "slug": "adventure",
+          "description": "A good adventure movie is the best way to escape from your usual life at least for a while and imagine yourself on board a spaceship or on a lonely raft in the endless ocean.",
+          "icon": "MdHiking",
+          "createdAt": 1658763325469,
+          "updatedAt": 1658763325469
+        },
+        {
+          "name": "Horror",
+          "icon": "MdOfflineBolt",
+          "description": "The objective of a horror movie is to scare the viewer and if possible, make them scream (often done with a jump scare). Horror movies often feature a monster, some type of evil entity or a terrible/frightening situation.",
+          "slug": "horror",
+          "id": "643e9bcf-26dd-49a3-88fb-2b5c8670d567",
+          "createdAt": 1658763397893,
+          "updatedAt": 1658763397893
+        },
+        {
+          "id": "a8d24ccf-79e3-4fd2-b18d-8c95b9671b40",
+          "name": "Action",
+          "slug": "action",
+          "description": "This type of movie generally involves a lot of action scenes including violence, like fighting or shoot-outs (with weapons), car chases and often lots of explosions. Some subgenres considered action movies include: disaster films, martial arts films, spy films and superhero films",
+          "icon": "MdSportsKabaddi",
+          "createdAt": 1658763427742,
+          "updatedAt": 1658763427742
+        }
+      ],
+      "countOpened": 3,
+      "videoUrl": "/uploads/cinema/ip-man.mp4",
+      "actors": [
+        {
+          "id": "03a4df87-5f9a-4471-bfa3-2a1057ac64d6",
+          "name": "Charlize Theron",
+          "photo": "/uploads/actors/charlize-theron.jpg",
+          "slug": "charlize-theron",
+          "countMovies": 0,
+          "createdAt": 1659014869559,
+          "updatedAt": 1659014869559
+        },
+        {
+          "id": "efe5722c-6342-4f25-bd66-b5d41cc16f95",
+          "name": "Tom Hardy",
+          "photo": "/uploads/actors/tom-hardy.jpg",
+          "slug": "tom-hardy",
+          "countMovies": 0,
+          "createdAt": 1659015129298,
+          "updatedAt": 1659015129298
+        }
+      ],
+      "slug": "mad-max",
+      "isSendTelegram": false,
+      "createdAt": 1658680498582,
+      "updatedAt": 1658680498582,
+      "parameters": {
+        "year": "2014",
+        "duration": "102",
+        "country": "USA"
+      }
+    },
+    {
+      "id": "1e1ddc5f-bed7-4e3e-8814-79540e50e84f",
+      "poster": "/uploads/cinema/avatar-poster.jpg",
+      "bigPoster": "/uploads/cinema/avatar-big-poster.jpg",
+      "title": "Avatar",
+      "rating": [
+        {
+          "idUser": "3f732c63-0ff4-4a2c-9745-10a6dbf45698",
+          "value": 5
+        },
+        {
+          "idUser": "1",
+          "value": 4
+        }
+      ],
+      "genres": [
+        {
+          "id": "31e97419-c3ee-4a91-b6aa-63616c09b313",
+          "name": "Adventure",
+          "slug": "adventure",
+          "description": "A good adventure movie is the best way to escape from your usual life at least for a while and imagine yourself on board a spaceship or on a lonely raft in the endless ocean.",
+          "icon": "MdHiking",
+          "createdAt": 1658763325469,
+          "updatedAt": 1658763325469
+        },
+        {
+          "id": "a8d24ccf-79e3-4fd2-b18d-8c95b9671b40",
+          "name": "Action",
+          "slug": "action",
+          "description": "This type of movie generally involves a lot of action scenes including violence, like fighting or shoot-outs (with weapons), car chases and often lots of explosions. Some subgenres considered action movies include: disaster films, martial arts films, spy films and superhero films",
+          "icon": "MdSportsKabaddi",
+          "createdAt": 1658763427742,
+          "updatedAt": 1658763427742
+        }
+      ],
+      "countOpened": 12,
+      "videoUrl": "/uploads/cinema/avatar-video.mp4",
+      "actors": [
+        {
+          "id": "42d9f2e0-e716-433b-9596-cf337487f906",
+          "name": "Sam Worthington",
+          "photo": "/uploads/actors/sam-worthington.jpg",
+          "slug": "sam-worthington",
+          "countMovies": 0,
+          "createdAt": 1659015066511,
+          "updatedAt": 1659015066511
+        }
+      ],
+      "slug": "avatar",
+      "isSendTelegram": false,
+      "createdAt": 1658699792574,
+      "updatedAt": 1658699792574,
+      "parameters": {
+        "year": "2012",
+        "duration": "148",
+        "country": "USA"
+      }
+    },
+    {
+      "id": "e09bb7ae-c7c7-45ea-aec5-f2bee3b7a3a2",
+      "poster": "/uploads/cinema/spider-man-poster.jpg",
+      "bigPoster": "/uploads/cinema/spider-man-new-big-poster.jpg",
+      "title": "Spider-Man: No Way Home",
+      "rating": [
+        {
+          "idUser": "1",
+          "value": 5
+        }
+      ],
+      "genres": [
+        {
+          "id": "31e97419-c3ee-4a91-b6aa-63616c09b313",
+          "name": "Adventure",
+          "slug": "adventure",
+          "description": "A good adventure movie is the best way to escape from your usual life at least for a while and imagine yourself on board a spaceship or on a lonely raft in the endless ocean.",
+          "icon": "MdHiking",
+          "createdAt": 1658763325469,
+          "updatedAt": 1658763325469
+        },
+        {
+          "id": "a8d24ccf-79e3-4fd2-b18d-8c95b9671b40",
+          "name": "Action",
+          "slug": "action",
+          "description": "This type of movie generally involves a lot of action scenes including violence, like fighting or shoot-outs (with weapons), car chases and often lots of explosions. Some subgenres considered action movies include: disaster films, martial arts films, spy films and superhero films",
+          "icon": "MdSportsKabaddi",
+          "createdAt": 1658763427742,
+          "updatedAt": 1658763427742
+        }
+      ],
+      "countOpened": 9,
+      "videoUrl": "/uploads/cinema/spider-man-new-video.mp4",
+      "actors": [
+        {
+          "id": "b573583a-13b4-478a-a209-b52e7c58df7b",
+          "name": "Tom Holland",
+          "photo": "/uploads/actors/tom-holland.jpg",
+          "slug": "tom-holland",
+          "countMovies": 0,
+          "createdAt": 1658783761513,
+          "updatedAt": 1658783761513
+        }
+      ],
+      "slug": "spider-man-no-way-home",
+      "isSendTelegram": false,
+      "createdAt": 1659015865805,
+      "updatedAt": 1659015865805,
+      "parameters": {
+        "year": "2021",
+        "duration": "132",
+        "country": "USA"
+      }
+    },
+    {
+      "id": "67e48671-6215-46e9-a087-437ccc1e93d7",
+      "poster": "/uploads/cinema/shang-chi-poster.jpg",
+      "bigPoster": "/uploads/cinema/shan-chi-big-poster.jpg",
+      "title": "Shang-Chi and the Legend of the Ten Rings",
+      "rating": [
+        {
+          "idUser": "1",
+          "value": 4
+        }
+      ],
+      "genres": [
+        {
+          "id": "7b9ae89b-a331-497b-9b64-fed0f36a7f06",
+          "name": "Fantasy",
+          "slug": "fantasy",
+          "description": "Situations, places and/or events that don’t comply with natural laws or settings. They often involve some form of magic or supernatural elements. There are sometimes magical creatures or beings too.",
+          "icon": "MdAutoFixHigh",
+          "createdAt": 1658763344042,
+          "updatedAt": 1658763344042
+        },
+        {
+          "id": "a8d24ccf-79e3-4fd2-b18d-8c95b9671b40",
+          "name": "Action",
+          "slug": "action",
+          "description": "This type of movie generally involves a lot of action scenes including violence, like fighting or shoot-outs (with weapons), car chases and often lots of explosions. Some subgenres considered action movies include: disaster films, martial arts films, spy films and superhero films",
+          "icon": "MdSportsKabaddi",
+          "createdAt": 1658763427742,
+          "updatedAt": 1658763427742
+        }
+      ],
+      "countOpened": 2,
+      "videoUrl": "/uploads/cinema/shang-chi-video.mp4",
+      "actors": [
+        {
+          "id": "110c3bdd-fcd7-4ef6-a87b-07722ce86c32",
+          "name": "Simu Liu",
+          "photo": "/uploads/actors/simu-liu.jpg",
+          "slug": "simu-liu",
+          "countMovies": 0,
+          "createdAt": 1659015082777,
+          "updatedAt": 1659015082777
+        }
+      ],
+      "slug": "shang-chi-and-the-legend-of-the-ten-rings",
+      "isSendTelegram": false,
+      "createdAt": 1659016265538,
+      "updatedAt": 1659016265538,
+      "parameters": {
+        "year": "2021",
+        "duration": "132",
+        "country": "Hong Kong, China"
+      }
+    },
+    {
+      "id": "6e3a4deb-396f-47d0-b1af-166d32a7f61e",
+      "poster": "/uploads/cinema/encanto-poster.jpg",
+      "bigPoster": "/uploads/cinema/encanto-big-poster.jpg",
+      "title": "Encanto",
+      "rating": [
+        {
+          "idUser": "1",
+          "value": 4
+        }
+      ],
+      "genres": [
+        {
+          "id": "6202f5a6-c473-4e31-a6c3-b52b252de9d0",
+          "name": "Animated",
+          "slug": "animated",
+          "description": "Instead of real actors on the screen, drawn images (nowadays computer generated ones) are used to tell the story. Real actors are used for the voices of the animated characters.",
+          "icon": "MdMovieFilter",
+          "createdAt": 1658763514548,
+          "updatedAt": 1658763514548
+        }
+      ],
+      "countOpened": 0,
+      "videoUrl": "/uploads/cinema/encanto-video.mp4",
+      "actors": [
+        {
+          "id": "6026c42d-cc70-44a8-92c8-caea27b1120a",
+          "name": "Stephanie Beatriz",
+          "photo": "/uploads/actors/stephanie-beatriz.jpg",
+          "slug": "stephanie-beatriz",
+          "countMovies": 0,
+          "createdAt": 1659015104696,
+          "updatedAt": 1659015104696
+        }
+      ],
+      "slug": "encanto",
+      "isSendTelegram": false,
+      "createdAt": 1659016336286,
+      "updatedAt": 1659016336286,
+      "parameters": {
+        "year": "2021",
+        "duration": "112",
+        "country": "Canada"
+      }
+    },
+    {
+      "id": "2d386c33-bf45-45c0-a9f6-1e971f1eade5",
+      "poster": "/uploads/cinema/hobbit-poster.jpg",
+      "bigPoster": "/uploads/cinema/hobbit-1-big-poster.jpg",
+      "title": "The Hobbit: An Unexpected Journey",
+      "rating": [
+        {
+          "idUser": "1",
+          "value": 5
+        }
+      ],
+      "genres": [
+        {
+          "id": "31e97419-c3ee-4a91-b6aa-63616c09b313",
+          "name": "Adventure",
+          "slug": "adventure",
+          "description": "A good adventure movie is the best way to escape from your usual life at least for a while and imagine yourself on board a spaceship or on a lonely raft in the endless ocean.",
+          "icon": "MdHiking",
+          "createdAt": 1658763325469,
+          "updatedAt": 1658763325469
+        },
+        {
+          "id": "7b9ae89b-a331-497b-9b64-fed0f36a7f06",
+          "name": "Fantasy",
+          "slug": "fantasy",
+          "description": "Situations, places and/or events that don’t comply with natural laws or settings. They often involve some form of magic or supernatural elements. There are sometimes magical creatures or beings too.",
+          "icon": "MdAutoFixHigh",
+          "createdAt": 1658763344042,
+          "updatedAt": 1658763344042
+        }
+      ],
+      "countOpened": 2,
+      "videoUrl": "/uploads/cinema/hobbit-1-video.mp4",
+      "actors": [
+        {
+          "id": "f986147d-3f39-41fb-995f-a8bdfaf440bf",
+          "name": "Martin-Freeman",
+          "photo": "/uploads/actors/martin-freeman.jpg",
+          "slug": "martin-freeman",
+          "countMovies": 0,
+          "createdAt": 1659014989640,
+          "updatedAt": 1659014989640
+        }
+      ],
+      "slug": "the-hobbit-an-unexpected-journey",
+      "isSendTelegram": false,
+      "createdAt": 1659016414844,
+      "updatedAt": 1659016414844,
+      "parameters": {
+        "year": "2012",
+        "duration": "203",
+        "country": "USA"
+      }
+    },
+    {
+      "id": "b8eb780f-a40a-4108-9ba4-aac2038b0e7b",
+      "poster": "/uploads/cinema/i-am-legend-poster.jpg",
+      "bigPoster": "/uploads/cinema/i-am-legend-big-poster.jpg",
+      "title": "I am Legend",
+      "rating": [
+        {
+          "idUser": "1",
+          "value": 4
+        }
+      ],
+      "genres": [
+        {
+          "name": "Horror",
+          "icon": "MdOfflineBolt",
+          "description": "The objective of a horror movie is to scare the viewer and if possible, make them scream (often done with a jump scare). Horror movies often feature a monster, some type of evil entity or a terrible/frightening situation.",
+          "slug": "horror",
+          "id": "643e9bcf-26dd-49a3-88fb-2b5c8670d567",
+          "createdAt": 1658763397893,
+          "updatedAt": 1658763397893
+        },
+        {
+          "id": "a8d24ccf-79e3-4fd2-b18d-8c95b9671b40",
+          "name": "Action",
+          "slug": "action",
+          "description": "This type of movie generally involves a lot of action scenes including violence, like fighting or shoot-outs (with weapons), car chases and often lots of explosions. Some subgenres considered action movies include: disaster films, martial arts films, spy films and superhero films",
+          "icon": "MdSportsKabaddi",
+          "createdAt": 1658763427742,
+          "updatedAt": 1658763427742
+        }
+      ],
+      "countOpened": 0,
+      "videoUrl": "/uploads/cinema/i-am-legend-video.mp4",
+      "actors": [
+        {
+          "id": "cb6777cb-f1fa-4e66-af8b-71915484414c",
+          "name": "Will Smith",
+          "photo": "/uploads/actors/will-smith.jpg",
+          "slug": "will-smith",
+          "countMovies": 0,
+          "createdAt": 1658783783545,
+          "updatedAt": 1658783783545
+        }
+      ],
+      "slug": "i-am-legend",
+      "isSendTelegram": false,
+      "createdAt": 1659016753360,
+      "updatedAt": 1659016753360,
+      "parameters": {
+        "year": "2008",
+        "duration": "148",
+        "country": "USA"
+      }
+    },
+    {
+      "id": "ce991c0d-6e54-4ab1-86f6-e5e85165ed9b",
+      "poster": "/uploads/cinema/john-wick-poster.jpg",
+      "bigPoster": "/uploads/cinema/john-wick-big-poster.jpg",
+      "title": "Jon Wick",
+      "rating": [
+        {
+          "idUser": "1",
+          "value": 4
+        }
+      ],
+      "genres": [
+        {
+          "id": "a8d24ccf-79e3-4fd2-b18d-8c95b9671b40",
+          "name": "Action",
+          "slug": "action",
+          "description": "This type of movie generally involves a lot of action scenes including violence, like fighting or shoot-outs (with weapons), car chases and often lots of explosions. Some subgenres considered action movies include: disaster films, martial arts films, spy films and superhero films",
+          "icon": "MdSportsKabaddi",
+          "createdAt": 1658763427742,
+          "updatedAt": 1658763427742
+        }
+      ],
+      "countOpened": 0,
+      "videoUrl": "/uploads/cinema/john-wick-video.mp4",
+      "actors": [
+        {
+          "id": "b77204ab-e2e9-43a6-bf93-2aadf3c36749",
+          "name": "Keanu Reeves",
+          "photo": "/uploads/actors/keanu-reeves.jpg",
+          "slug": "keanu-reeves",
+          "countMovies": 0,
+          "createdAt": 1659014937024,
+          "updatedAt": 1659014937024
+        }
+      ],
+      "slug": "jon-wick",
+      "isSendTelegram": false,
+      "createdAt": 1659016857462,
+      "updatedAt": 1659016857462,
+      "parameters": {
+        "year": "2008",
+        "duration": "132",
+        "country": "USA"
+      }
+    },
+    {
+      "id": "1803e9c9-5e66-4d37-ab29-cc3ec9ebc65f",
+      "poster": "/uploads/cinema/hobbit-3-poster.jpg",
+      "bigPoster": "/uploads/cinema/hobbit-3-big-poster.jpg",
+      "title": "The Hobbit: The Battle of the Five Armies",
+      "rating": [
+        {
+          "idUser": "1",
+          "value": 5
+        }
+      ],
+      "genres": [
+        {
+          "id": "7b9ae89b-a331-497b-9b64-fed0f36a7f06",
+          "name": "Fantasy",
+          "slug": "fantasy",
+          "description": "Situations, places and/or events that don’t comply with natural laws or settings. They often involve some form of magic or supernatural elements. There are sometimes magical creatures or beings too.",
+          "icon": "MdAutoFixHigh",
+          "createdAt": 1658763344042,
+          "updatedAt": 1658763344042
+        },
+        {
+          "id": "a8d24ccf-79e3-4fd2-b18d-8c95b9671b40",
+          "name": "Action",
+          "slug": "action",
+          "description": "This type of movie generally involves a lot of action scenes including violence, like fighting or shoot-outs (with weapons), car chases and often lots of explosions. Some subgenres considered action movies include: disaster films, martial arts films, spy films and superhero films",
+          "icon": "MdSportsKabaddi",
+          "createdAt": 1658763427742,
+          "updatedAt": 1658763427742
+        }
+      ],
+      "countOpened": 0,
+      "videoUrl": "/uploads/cinema/hobbit-3-video.mp4",
+      "actors": [
+        {
+          "id": "f986147d-3f39-41fb-995f-a8bdfaf440bf",
+          "name": "Martin-Freeman",
+          "photo": "/uploads/actors/martin-freeman.jpg",
+          "slug": "martin-freeman",
+          "countMovies": 0,
+          "createdAt": 1659014989640,
+          "updatedAt": 1659014989640
+        }
+      ],
+      "slug": "the-hobbit-the-battle-of-the-five-armies",
+      "isSendTelegram": false,
+      "createdAt": 1659018941803,
+      "updatedAt": 1659018941803,
+      "parameters": {
+        "year": "2014",
+        "duration": "203",
+        "country": "New Zeland"
+      }
+    },
+    {
+      "id": "98f8f1e8-d107-4ffa-a235-54a6bc85047d",
+      "poster": "/uploads/cinema/avatar-2-poster.jpg",
+      "bigPoster": "/uploads/cinema/avatar-2-big-poster.jpg",
+      "title": "Avatar-2",
+      "rating": [
+        {
+          "idUser": "1",
+          "value": 5
+        }
+      ],
+      "genres": [
+        {
+          "id": "31e97419-c3ee-4a91-b6aa-63616c09b313",
+          "name": "Adventure",
+          "slug": "adventure",
+          "description": "A good adventure movie is the best way to escape from your usual life at least for a while and imagine yourself on board a spaceship or on a lonely raft in the endless ocean.",
+          "icon": "MdHiking",
+          "createdAt": 1658763325469,
+          "updatedAt": 1658763325469
+        },
+        {
+          "id": "7b9ae89b-a331-497b-9b64-fed0f36a7f06",
+          "name": "Fantasy",
+          "slug": "fantasy",
+          "description": "Situations, places and/or events that don’t comply with natural laws or settings. They often involve some form of magic or supernatural elements. There are sometimes magical creatures or beings too.",
+          "icon": "MdAutoFixHigh",
+          "createdAt": 1658763344042,
+          "updatedAt": 1658763344042
+        },
+        {
+          "id": "a8d24ccf-79e3-4fd2-b18d-8c95b9671b40",
+          "name": "Action",
+          "slug": "action",
+          "description": "This type of movie generally involves a lot of action scenes including violence, like fighting or shoot-outs (with weapons), car chases and often lots of explosions. Some subgenres considered action movies include: disaster films, martial arts films, spy films and superhero films",
+          "icon": "MdSportsKabaddi",
+          "createdAt": 1658763427742,
+          "updatedAt": 1658763427742
+        }
+      ],
+      "countOpened": 1,
+      "videoUrl": "/uploads/cinema/avatar-2-video.mp4",
+      "actors": [
+        {
+          "id": "42d9f2e0-e716-433b-9596-cf337487f906",
+          "name": "Sam Worthington",
+          "photo": "/uploads/actors/sam-worthington.jpg",
+          "slug": "sam-worthington",
+          "countMovies": 0,
+          "createdAt": 1659015066511,
+          "updatedAt": 1659015066511
+        }
+      ],
+      "slug": "avatar-2",
+      "isSendTelegram": false,
+      "createdAt": 1659019001657,
+      "updatedAt": 1659019001657,
+      "parameters": {
+        "year": "2022",
+        "duration": "148",
+        "country": "USA"
+      }
+    },
+    {
+      "id": "03447654-405d-4359-b155-6f45a2cbfce6",
+      "poster": "/uploads/cinema/doctor-strange-poster.jpg",
+      "bigPoster": "/uploads/cinema/doctor-strange-big-poster.jpg",
+      "title": "Doctor Strange in the Multiverse of Madness",
+      "rating": [
+        {
+          "idUser": "1",
+          "value": 3
+        }
+      ],
+      "genres": [
+        {
+          "id": "7b9ae89b-a331-497b-9b64-fed0f36a7f06",
+          "name": "Fantasy",
+          "slug": "fantasy",
+          "description": "Situations, places and/or events that don’t comply with natural laws or settings. They often involve some form of magic or supernatural elements. There are sometimes magical creatures or beings too.",
+          "icon": "MdAutoFixHigh",
+          "createdAt": 1658763344042,
+          "updatedAt": 1658763344042
+        },
+        {
+          "id": "a8d24ccf-79e3-4fd2-b18d-8c95b9671b40",
+          "name": "Action",
+          "slug": "action",
+          "description": "This type of movie generally involves a lot of action scenes including violence, like fighting or shoot-outs (with weapons), car chases and often lots of explosions. Some subgenres considered action movies include: disaster films, martial arts films, spy films and superhero films",
+          "icon": "MdSportsKabaddi",
+          "createdAt": 1658763427742,
+          "updatedAt": 1658763427742
+        }
+      ],
+      "countOpened": 1,
+      "videoUrl": "/uploads/cinema/doctor-strange-video.mp4",
+      "actors": [
+        {
+          "id": "6026c42d-cc70-44a8-92c8-caea27b1120a",
+          "name": "Stephanie Beatriz",
+          "photo": "/uploads/actors/stephanie-beatriz.jpg",
+          "slug": "stephanie-beatriz",
+          "countMovies": 0,
+          "createdAt": 1659015104696,
+          "updatedAt": 1659015104696
+        }
+      ],
+      "slug": "doctor-strange-in-the-multiverse-of-madness",
+      "isSendTelegram": false,
+      "createdAt": 1659019065365,
+      "updatedAt": 1659019065365,
+      "parameters": {
+        "year": "2022",
+        "duration": "132",
+        "country": "USA"
+      }
+    },
+    {
+      "id": "109a2d64-8057-41c5-bc47-66a566b02a16",
+      "poster": "/uploads/cinema/tor-4-poster.jpg",
+      "bigPoster": "/uploads/cinema/tor-4-big-poster.jpg",
+      "title": "Thor: Love and Thunder",
+      "rating": [
+        {
+          "idUser": "1",
+          "value": 4
+        }
+      ],
+      "genres": [
+        {
+          "id": "31e97419-c3ee-4a91-b6aa-63616c09b313",
+          "name": "Adventure",
+          "slug": "adventure",
+          "description": "A good adventure movie is the best way to escape from your usual life at least for a while and imagine yourself on board a spaceship or on a lonely raft in the endless ocean.",
+          "icon": "MdHiking",
+          "createdAt": 1658763325469,
+          "updatedAt": 1658763325469
+        },
+        {
+          "id": "a8d24ccf-79e3-4fd2-b18d-8c95b9671b40",
+          "name": "Action",
+          "slug": "action",
+          "description": "This type of movie generally involves a lot of action scenes including violence, like fighting or shoot-outs (with weapons), car chases and often lots of explosions. Some subgenres considered action movies include: disaster films, martial arts films, spy films and superhero films",
+          "icon": "MdSportsKabaddi",
+          "createdAt": 1658763427742,
+          "updatedAt": 1658763427742
+        },
+        {
+          "id": "5dce7d68-0a0b-4590-84af-a213dc663d7b",
+          "name": "Comedy",
+          "slug": "comedy",
+          "description": "The main idea of comedies is to make the audience laugh. The main characters are involved in funny situations.",
+          "icon": "MdTheaterComedy",
+          "createdAt": 1658763478631,
+          "updatedAt": 1658763478631
+        }
+      ],
+      "countOpened": 1,
+      "videoUrl": "/uploads/cinema/tor-4-video.mp4",
+      "actors": [
+        {
+          "id": "42d9f2e0-e716-433b-9596-cf337487f906",
+          "name": "Sam Worthington",
+          "photo": "/uploads/actors/sam-worthington.jpg",
+          "slug": "sam-worthington",
+          "countMovies": 0,
+          "createdAt": 1659015066511,
+          "updatedAt": 1659015066511
+        }
+      ],
+      "slug": "thor-love-and-thunder",
+      "isSendTelegram": false,
+      "createdAt": 1659019255637,
+      "updatedAt": 1659019255637,
+      "parameters": {
+        "year": "2022",
+        "duration": "120",
+        "country": "USA"
+      }
+    }
+  ]
+}

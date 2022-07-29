@@ -4,5 +4,6 @@ export const getUsersUrl = (string: string) => string === '' ? `/users` : `/user
 export const getMoviesUrl = (string: string) => string === '' ? `/movies` : `/movies/${string}`
 export const getActorsUrl = (string: string) => string === '' ? `/actors` : `/actors/${string}`
 export const getGenresUrl = (string: string) => string === '' ? `/genres` : `/genres/${string}`
+export const getAuthLogin = (string: string) => `http://my-cinema-front.herokuapp.com/${string}`
 
-export const API_URL = 'http://localhost:8000'
+export const API_URL = 'http://my-cinema-front.herokuapp.com/api'

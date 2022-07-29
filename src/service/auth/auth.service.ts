@@ -1,5 +1,5 @@
 import { axiosPublic } from "../../api/interseptors"
-import { getAuthUrl } from "../../constant/serverPath"
+import { getAuthLogin, getAuthUrl } from "../../constant/serverPath"
 import { IUser } from "../../types/user.types";
 import { removeTokenStorage, saveTokenStorage } from "./auth.helper"
 
@@ -36,7 +36,7 @@ export const AuthService = {
   },
 
   async login(email: string, password: string) {
-    const response = await axiosPublic.post<IUser>(getAuthUrl('login'), {email, password})
+    const response = await axiosPublic.post<IUser>(getAuthLogin('login'), {email, password})
     if(response.data) saveTokenStorage(uuid.v4(), response.data)
 
     return response
