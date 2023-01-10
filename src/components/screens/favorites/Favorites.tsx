@@ -10,7 +10,7 @@ const Favorites:FC = () => {
 
   return (
     <>
-      <h1 className='heading'>Favorites</h1>
+      <h1 className={styles.heading}>Favorites</h1>
 
       <section className={styles.favorites}>
         {isLoading ?
