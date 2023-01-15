@@ -29,6 +29,8 @@ const Auth:FC = () => {
     !user ?
     <section className={styles.wrapper}>
     <form onSubmit={handleSubmit(onSubmit)}>
+      <h1>Email: testADMIN@test.ru</h1>
+      <h1>Password: 123456</h1>
       <h1 className={styles.title}>Auth</h1>
       <AuthFields formState={formState} register={registerInput} isPasswordRequired />
       <div className={styles.buttons}>
